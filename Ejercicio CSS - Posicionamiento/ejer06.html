@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: #ecf0f3;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      place-items: center;
+      font-family: poppins;
+    }
+
+    img {
+      width: 3rem;
+    }
+
+    .fila_float #bola7,
+    #bola8,
+    #bola9,
+    #bola10,
+    #bola13,
+    #bola7_2,
+    #bola8_2,
+    #bola9_2,
+    #bola10_2,
+    #bola13_2 {
+      float: left;
+      display: flexbox;
+    }
+
+    .fila_float #bola9,
+    #bola10 {
+      float: left;
+      clear: both;
+    }
+
+    #bola9 {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fila_float">
+    <img src="imagen/bola7.jpeg" alt="bola7" id="bola7" />
+    <img src="imagen/bola8.jpeg" alt="bola8" id="bola8" />
+  </div>
+  <div class="fila_float">
+    <img src="imagen/bola9.jpeg" alt="bola9" id="bola9" />
+  </div>
+  <div class="fila_float">
+    <img src="imagen/bola10.jpeg" alt="bola10" id="bola10" />
+    <img src="imagen/bola13.jpeg" alt="bola13" id="bola13" />
+  </div>
+</body>
+
+</html>

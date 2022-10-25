@@ -1,0 +1,126 @@
+/* CSS Document */
+
+/*PAGE LAYOUT*/
+
+#toplinks{position:absolute; right:10px; top:10px;}
+#submenu{float:right; width:526px; height:32px; background-image:url(bg_submenu.gif); background-position:top; background-repeat:repeat-x;}
+
+/*GRAY PANEL*/
+.graypanel{
+	 background-color:#F7F7F7; padding:10px; margin:10px;
+}
+
+/*TEXT STYLES*/
+.bodytext {
+	font: 0.7em Tahoma, sans-serif;
+	color: #666666;
+}
+
+.titletext {
+	font: 0.7em Tahoma, sans-serif;	
+	color:#CC0000;
+}
+.whitetitle {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.smalltitle {
+	font:  Tahoma, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#CC0000;
+}
+.smallwhitetext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+.smallwhitetext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;	
+	text-decoration:none;
+}
+.smallwhitetext a:hover{
+	text-decoration:underline;
+}
+.smallgraytext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#999999;
+}
+.smallgraytext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#999999;
+	text-decoration:none;
+}
+.smallgraytext a:hover{
+	text-decoration:underline;
+}
+.smallredtext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#CC0000;
+}
+.smallredtext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#CC0000;
+	text-decoration:none;
+}
+#logo{
+	background: url("tie_logo.gif");
+	float: left;
+	width: 274px;
+	height: 213px;
+}
+#toplinks{
+	float: right;
+	width: 274px;
+	height: 2px;
+	background-color: #f0f0f0;
+	position: relative;
+}
+#menu{float:right;
+	width: 512px;
+	height: 32px;
+	background: url("bg_menu.gif");
+}
+#contenttext	{
+	float: right;
+	width: 526px;
+}
+#leftpanel{
+	float:left;
+	width: 274px;
+}
+#footer{
+	float: left;	
+	width: 800px;
+	background-color: #f0f0f0;
+
+}
+.graypanel{
+	border:solid 1px #666;
+}
+
+.titletext{
+	border:solid 3px;
+	font-weight: bold 109pz;
+bottom: -100px;
+}
+.smalltitle{
+	font: 0.7em;
+}
+a{
+	color: #fff;	
+}
+.smalltitle>a:hover{text-decoration: underline;}
