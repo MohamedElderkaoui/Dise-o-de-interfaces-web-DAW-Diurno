@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .parent {
+            margin: auto auto;
+            padding: 0;}
+         body {
+        width: 50vh;
+        height: 50vh;
+         }
+        #c1>.parent,#c2>.parent,#c3>.parent,#c4>.parent {
+            border: 1px solid black;
+         } 
+         .parent >div {
+            margin: 1px;
+        border: 1px solid black;
+      }
+  
+      #c1 {
+        grid-area: c1;
+      }
+      #c2 {
+        grid-area: c2;
+      }
+      #c3 {
+        grid-area: c3;
+      }
+      div#c { width: 30em;
+        height: 20em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'c1 c2' 'c3 c3';
+      }
+ 
+      div#c> #c1 > .parent {
+        width: 44vh;
+        height: 44vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+
+      #c1 > .parent > .div1 {
+        grid-area: 1 / 1 / 2 / 5;
+        background-color: rgb(255, 149, 0);
+      }
+      #c1 > .parent > .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: green;
+      }
+      #c1 > .parent > .div3 {
+        grid-area: 2 / 2 / 3 / 5;
+        background-color: blue;
+      }
+      #c1 > .parent > .div4 {
+        grid-area: 3 / 1 / 4 / 3;
+        background-color: green;
+      }
+      #c1 > .parent > .div5 {
+        grid-area: 3 / 3 / 4 / 4;
+        background-color: rgb(255, 0, 0);
+      }
+      #c1 > .parent > .div6 {
+        grid-area: 3 / 4 / 4 / 5;
+        background-color: blue;
+      }
+      #c1 > .parent > .div7 {
+        grid-area: 4 / 1 / 5 / 2;
+        background-color: green;
+      }
+      #c1 > .parent > .div8 {
+        grid-area: 4 / 2 / 5 / 5;
+        background-color: rgb(255, 0, 0);
+      }
+      #c2>.parent {
+        width: 44vh;
+        height: 44vh;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+#c2>.parent>.div1 { grid-area: 1 / 1 / 2 / 5;  background-color: rgb(255, 149, 0);}
+#c2>.parent>.div2 { grid-area: 2 / 1 / 3 / 2;  background-color: green;}
+#c2>.parent>.div3 { grid-area: 2 / 2 / 3 / 5;   background-color: blue;}
+#c2>.parent>.div4 { grid-area: 3 / 1 / 4 / 2;  background-color: green;}
+#c2>.parent>.div5 { grid-area: 3 / 2 / 4 / 3;   background-color: blue;}
+#c2>.parent>.div6 { grid-area: 3 / 3 / 4 / 4;  background-color: rgb(255, 0, 0);}
+#c2>.parent>.div7 { grid-area: 3 / 4 / 4 / 5;  background-color: blue; }
+#c2>.parent>.div8 { grid-area: 4 / 1 / 5 / 2;  background-color: green;}
+#c2>.parent>.div9 { grid-area: 4 / 2 / 5 / 5;  background-color: rgb(255, 0, 0);}
+#c3>.parent {
+width: 44vh;
+height: 44vh;
+
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+#c3>.parent>.div1 { grid-area: 1 / 2 / 2 / 3; }
+#c3>.parent>.div2 { grid-area: 1 / 3 / 2 / 4; }
+#c3>.parent>.div3 { grid-area: 1 / 4 / 2 / 5; }
+#c3>.parent>.div4 { grid-area: 1 / 5 / 2 / 6; }
+#c3>.parent>.div5 { grid-area: 1 / 6 / 2 / 7; }
+#c3>.parent>.div6 { grid-area: 2 / 1 / 3 / 2; }
+#c3>.parent>.div7 { grid-area: 3 / 1 / 4 / 2; }
+#c3>.parent>.div8 { grid-area: 4 / 1 / 5 / 2; }
+#c3>.parent>.div9 { grid-area: 5 / 1 / 6 / 7; }
+#c3>.parent>.div10 { grid-area: 6 / 1 / 7 / 2; }
+#c3>.parent>.div11 { grid-area: 7 / 1 / 8 / 2; }
+#c3>.parent>.div12 { grid-area: 8 / 1 / 9 / 2; }
+#c3>.parent>.div13 { grid-area: 2 / 2 / 5 / 3; }
+#c3>.parent>.div14 { grid-area: 2 / 3 / 4 / 4; }
+#c3>.parent>.div15 { grid-area: 4 / 3 / 5 / 4; }
+#c3>.parent>.div16 { grid-area: 2 / 4 / 5 / 5; }
+#c3>.parent>.div17 { grid-area: 2 / 5 / 5 / 6; }
+#c3>.parent>.div18 { grid-area: 2 / 6 / 4 / 7; }
+#c3>.parent>.div19 { grid-area: 4 / 6 / 5 / 7; }
+#c3>.parent>.div20 { grid-area: 6 / 2 / 7 / 3; }
+#c3>.parent>.div21 { grid-area: 7 / 2 / 9 / 3; }
+#c3>.parent>.div22 { grid-area: 6 / 3 / 7 / 4; }
+#c3>.parent>.div23 { grid-area: 7 / 3 / 9 / 4; }
+#c3>.parent>.div24 { grid-area: 6 / 4 / 7 / 5; }
+#c3>.parent>.div25 { grid-area: 7 / 4 / 9 / 5; }
+#c3>.parent>.div26 { grid-area: 6 / 5 / 9 / 6; }
+#c3>.parent>.div27 { grid-area: 6 / 6 / 7 / 7; }
+#c3>.parent>.div28 { grid-area: 7 / 6 / 9 / 7; }
+    </style>
+  </head>
+  <body>
+    <div id="c">
+      <div id="c1">
+        <div class="parent">
+          <div class="div1"></div>
+          <div class="div2"></div>
+          <div class="div3"></div>
+          <div class="div4"></div>
+          <div class="div5"></div>
+          <div class="div6"></div>
+          <div class="div7"></div>
+          <div class="div8"></div>
+        </div>
+      </div>
+      <div id="c2">
+        <div class="parent">
+            <div class="div1"> </div>
+            <div class="div2"> </div>
+            <div class="div3"> </div>
+            <div class="div4"> </div>
+            <div class="div5"> </div>
+            <div class="div6"> </div>
+            <div class="div7"> </div>
+            <div class="div8"> </div>
+            <div class="div9"> </div>
+            </div></div>
+      <div id="c3">
+        <div class="parent">
+            <div class="div1">lunnes </div>
+            <div class="div2">martes</div>
+            <div class="div3">miercoles </div>
+            <div class="div4">jueves </div>
+            <div class="div5">viernes </div>
+            <div class="div6">8:30 <br>9:20 </div>
+            <div class="div7"> 9:25 <br> 10:15</div>
+            <div class="div8"> 10:20 <br>11:10</div>
+            <div class="div9"> recleo</div>
+            <div class="div10"> 11:40
+                <br> 12:30</div>
+            <div class="div11"> 12:35
+                <br> 13:25</div>
+            <div class="div12"> 14:30
+                <br> 15:20</div>
+            <div class="div13"> servidor</div>
+            <div class="div14"> criente</div>
+            <div class="div15">eie </div>
+            <div class="div16"> servidor</div>
+            <div class="div17">diseño </div>
+            <div class="div18">cliente </div>
+            <div class="div19">eie </div>
+            <div class="div20">ingles </div>
+            <div class="div21"> dipiesgre</div>
+            <div class="div22">eie </div>
+            <div class="div23">diseño </div>
+            <div class="div24">diseno </div>
+            <div class="div25"> criente</div>
+            <div class="div26">servidor </div>
+            <div class="div27">ingles </div>
+            <div class="div28"> dipiesgre</div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

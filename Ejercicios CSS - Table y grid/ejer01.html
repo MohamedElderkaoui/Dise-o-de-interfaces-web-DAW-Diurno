@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      body {
+        width: 100vh;
+        height: 100vh;
+      }
+      table {
+        /* height: 50px;          */
+      }
+      td {
+        width: 100vh;
+        height: 10vh;
+      }
+      th {
+        height: 100%;
+        width: 100;
+      }
+      .c1 {
+        background-color: rgb(255, 149, 0);
+      }
+      .c2 {
+        background-color: green;
+      }
+      .c3 {
+        background-color: blue;
+      }
+      .c4 {
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td class="c1" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="c2"></td>
+              <td class="c3" colspan="3"></td>
+            </tr>
+            <tr>
+              <td class="c2" colspan="2"></td>
+              <td class="c4"></td>
+              <td class="c3"></td>
+            </tr>
+            <tr>
+              <td class="c2"></td>
+              <td class="c4"></td>
+              <td class="c4"></td>
+              <td class="c4"></td>
+            </tr>
+          </table>
+        </td>
+        <td><table>
+            <tr>
+              <td class="c1" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="c2"></td>
+              <td class="c3" colspan="3"></td>
+            </tr>
+            <tr>
+              <td class="c2" colspan="1"></td>
+              <td class="c3"></td>
+              <td class="c4"></td>
+              <td class="c3"></td>
+            </tr>
+            <tr>
+              <td class="c2"></td>
+              <td class="c4" colspan="3"></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td colspan="2"><table>
+            <tr>
+                <td></td>
+                <td>lunnes</td>
+                <td>martes</td>
+                <td>miercoles</td>
+                <td>jueves</td>
+                <td>viernes</td>
+            </tr>
+            <tr>
+                <td>8:30 <br>
+                    9:20
+                </td>
+                <td rowspan="3">servidor</td>
+                <td rowspan="2">cliente</td>
+                <td rowspan="3">servidor</td>
+                <td rowspan="3">diswe</td>
+                <td rowspan="2">cliente</td>
+            </tr>
+            <tr>
+                <td>9:25 <br> 10:15</td>
+                
+            </tr>
+            <tr>
+                <td>10:20
+                    <br> 11:10
+                </td>
+                <td>eie</td>
+                <td>eie</td>
+            </tr>
+            <tr>
+                <td colspan="6">recleo</td>
+            </tr>
+            <tr>
+                <td>11:40
+                <br> 12:30</td>
+                <td>ingles</td>
+                <td>eie</td>
+                <td>diswe</td>
+                <td rowspan="3">servidor</td>
+                <td>ingles</td>
+            </tr>
+            <tr>
+                <td>12:35
+                <br> 13:25
+                </td>
+                <td rowspan="2">daw</td>
+                <td rowspan="2">diswe</td>
+                <td rowspan="2">cliente</td>
+                <td rowspan="2">daw</td>
+            </tr>
+            <tr>
+                <td>14:30
+                <br> 15:20
+                </td>
+                
+            </tr>
+        </table></td>
+      </tr>
+    </table>
+  </body>
+</html>
