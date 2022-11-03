@@ -5,56 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        width: 100vh;
-        height: 100vh;
-      }
-      #parent {
-        position: relative;
-      
-        border: 1px solid green;
-        width: 25%;
-        height: 25%;
-      }
-  
-     
-      #bola1,
-      #bola2,
-      #bola3,
-      #bola8 {
-        width: 33.444%;
-        height: 33.444%;
-          border-radius: 50%;
-        border: 10px solid ;
-        position: absolute;
-          
+    <style>    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 100rem ;
+      height: 100rem;
+    }
+    #parent {
+      position: relative;
 
-      }
-        /* texto centado */
-        div>div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /*
-            1
-           2 3
-        */
-        #bola1 {
-            top: calc(100%/8);
-            left: calc(100%/4);
+      border: 1px solid green;
+      width: 25%;
+      height: 25%;
+    }
 
-        }
-        #bola2 {
-            top: calc(100%/8*4);
-            left: calc(100%/12);
-        }
-        #bola3 {
-            top: calc(100%/8*4);
-           right: calc(100%/12);
-        }
-        
+    #bola1,
+    #bola2,
+    #bola3,
+    #bola8 {
+      width: 10%;
+      height: 10%;
+      border-radius: 50%;
+      border: 100px solid;
+      position: absolute;
+    }
+    /* texto centado */
+    div > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #bola1 > span::after {
+      content: '1';
+    }
+    #bola2 > span::after {
+      content: '2';
+    }
+    #bola3 > span::after {
+      content: '3';
+    }
+    /*
+          1
+         2 3
+      */
+    #bola1 {
+      top: calc(100% / 8);
+      left: calc(100% / 3.5);
+      border: 4rem solid rgba(255, 255, 3, 0.848);
+    }
+    #bola2 {
+      top: calc(100% / 8 * 4);
+      left: calc(100% / 12);
+      border: 4rem  solid rgba(3, 255, 16, 0.848);
+    }
+    #bola3 {
+      top: calc(100% / 8 * 4);
+      right: calc(100% / 12);
+      border: 4rem  solid rgba(62, 3, 255, 0.848);
+    }
     </style>
   </head>
   <body>
