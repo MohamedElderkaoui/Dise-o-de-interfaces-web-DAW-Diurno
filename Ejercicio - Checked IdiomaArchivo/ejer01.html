@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idiomas</title>
+    <style>
+   
+
+    
+    #bandera{
+        width: 160px;
+        height: 100px;
+        background: url("england.png");
+    }
+    
+     #idioma1:checked ~ td#bandera{
+      width: 160px;
+        height: 100px;
+        background: url("brasil.png");
+      }
+      #idioma2:checked ~ #bandera{
+        width: 160px;
+        height: 100px;
+        background: url("england.png");
+      }
+      body > table > tbody > tr.texto-ingles::before , body > table > tbody > tr.texto-brasil::before{
+        visibility: collapse; display: none;
+      } 
+      #idioma1:checked ~ tr.texto-ingles {
+        visibility: visible;
+        display: block;
+      }
+      #idioma1:checked ~ .texto-brasil {
+        visibility: collapse;
+        display: none;
+      }
+      #idioma2:checked ~.texto-ingles {
+      visibility: collapse;
+        display: none;
+      }
+      #idioma2:checked ~   .texto-brasil {
+        visibility: visible;
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <input type="radio" id="idioma1" name="idioma" checked />
+    <label for="idioma1">England</label>
+    <br />
+    <input type="radio" id="idioma2" name="idioma" />
+    <label for="idioma2">Brasil</label>
+    <br />
+    <table>
+      <tbody>
+        <tr><td id="bandera"></td></tr>
+        <tr class="texto-ingles"><td>Hello World !</td></tr>
+        <tr class="texto-brasil"><td>Olá mundo</td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>

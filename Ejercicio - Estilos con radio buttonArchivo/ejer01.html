@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }    
+        table>tr::before{color: #000;
+        background-color: #fff;}
+   #verde:checked ~ table tr:hover  {  color: white;
+          background-color: #4CAF50;
+        }
+        input#azul:checked ~ table tr:hover  {  color: white;
+          background-color: #2196F3;
+        }
+        #naranja:checked ~ table tr:hover {  color: white;
+          background-color: #ff9800;
+        }
+
+        </style>
+</head>
+<body>
+    
+
+<label for="verde">Verde</label>
+<input type="radio" id="verde" name="color" checked>
+<label for="verde">Azul</label>
+<input type="radio" id="azul" name="color">
+<label for="naranja">Naranja</label>
+<input type="radio" id="naranja" name="color"><br><br>
+
+<table>    
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table>
+</body>
+</html>
