@@ -6,45 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Idiomas</title>
     <style>
-   
+   /* 
+
+    */
 
     
     #bandera{
+      /*
+      width: 100px;
+      height: 100px;
+      */
+
         width: 160px;
         height: 100px;
         background: url("england.png");
     }
-    
-     #idioma1:checked ~ td#bandera{
+     #idioma2:checked ~table #bandera{
       width: 160px;
         height: 100px;
         background: url("brasil.png");
       }
-      #idioma2:checked ~ #bandera{
+      #idioma1:checked ~ table#bandera{
         width: 160px;
         height: 100px;
         background: url("england.png");
       }
-      body > table > tbody > tr.texto-ingles::before , body > table > tbody > tr.texto-brasil::before{
-        visibility: collapse; display: none;
-      } 
-      #idioma1:checked ~ tr.texto-ingles {
-        visibility: visible;
-        display: block;
-      }
-      #idioma1:checked ~ .texto-brasil {
-        visibility: collapse;
-        display: none;
-      }
-      #idioma2:checked ~.texto-ingles {
-      visibility: collapse;
-        display: none;
-      }
-      #idioma2:checked ~   .texto-brasil {
-        visibility: visible;
-        display: block;
-      }
+   
+      #idioma1:checked~table .texto-ingles,
+    #idioma2:checked~table .texto-brasil {
+      visibility: visible;
+    }
 
+    .texto-ingles,
+    .texto-brasil {
+      visibility: hidden;
+      position: absolute;
+    }
     </style>
   </head>
   <body>
@@ -61,5 +58,6 @@
         <tr class="texto-brasil"><td>Olá mundo</td></tr>
       </tbody>
     </table>
+    
   </body>
 </html>

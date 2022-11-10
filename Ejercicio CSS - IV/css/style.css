@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 15em;
+    padding: 0;
+    background-color: #FFD3F3;
+    font-family: 'Roboto', sans-serif;
+    height: 80%;
+    width: 70%;
+    /* CENTRADO EN PLANTALLA */
+    margin: 0 auto;     
+}
+h4{
+  margin: 0;
+    padding: 5px 0;
+}
+#logo {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+  
+    color: #f80000;
+}
+#contenedor{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+/* Al logo: altura de 60px, color de fondo a #fff15d y de letra a #000000 */
+#logo {
+    height: 60px;
+    background-color: #fff15d;
+    color: #000000;
+}
+/*A la cabecera una altura de 2em, alineación del texto al centro, color de fondo a #F78181 y de letra a #000000*/
+#cabecera {
+    height: 2em;
+    text-align: center;
+    background-color: #F78181;
+    color: #000000;
+}
+/*A izquierda: que flote a la izquierda, ancho del 75.5% aproximado, padding de 5px en todos los lados.*/
+#izquierda {
+    float: left;
+    /*
+    ancho del 75.5% aproximado
+    */
+    width: 75.5%;
+    /*
+    padding de 5px en todos los lados.
+    */
+    padding: 5px;
+}
+/*
+A derecha: que flote a la derecha, un ancho del 20%, padding de 10px, color de fondo a #FFCD61 y de letra a #333333
+*/
+#derecha {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background-color: #FFCD61;
+    color: #333333;
+}
+/*A la etiqueta PIES: que borre los float y aparezca ocupando todo el contenedor.*/
+#pies {
+    clear: both;
+    width: 100%;
+}
+/*
+A pie1: que flote a la izquierda, color de fondo a rojo, de letra a blanco y ancho del 50%
+A pie2: que flote a la derecha, color de fondo amarillo, de letra a #333333 y ancho del 50%
+
+*/
+#pie1 {
+    float: left;
+    background-color: red;
+    color: white;
+    width: 50%;
+}
+#pie2 {
+    float: right;
+    background-color: yellow;
+    color: #333333;
+    width: 50%;
+}
+
+/* ul y li centrado  con espacio  arribas y abajo */
+ul {
+    margin: 0;
+    padding: 0;
+   
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+li {
+    margin: 0 1em;
+}
