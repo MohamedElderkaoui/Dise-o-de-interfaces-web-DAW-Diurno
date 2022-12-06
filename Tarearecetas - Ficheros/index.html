@@ -1,29 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--  CSS -->
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--  CSS -->
+  <link rel="stylesheet" href="css/estilos.css">
+
 <body>
   <header></header>
   <div class="logo"></div>
   <div class="ll"></div>
   <div class="ti">postres lx</div>
-  <nav></nav>
+  <nav>
+    <!--
+      menu desplegable
+      recetas
+      Tiramisú
+Arroz con leche
+Dulce de leche
+Crema catalana
+Tarta de chocolate
+Tarta de manzana
+con divs y a referencia
+Arroz_con_leche
+Dulce_de_leche
+Crema_catalana
+Tarta_de_chocolate
+Tarta de manzana
+<a href="#Arroz_con_leche">Arroz con leche</a>
+<a href="#Dulce_de_leche">Dulce de leche</a>  
+<a href="#Crema_catalana">Crema catalana</a>
+<a href="#Tarta_de_chocolate">Tarta de chocolate</a>
+<a href="#Tarta_de_manzana">Tarta de manzana</a>
+    -->
+    <h1>recetas</h1>
+    <ul class="dropdown-content">
+      <li>
+        <!--tiramisu-->
+        <a href="#Tiramisú">Tiramisú</a>
+      </li>
+      <li><a href="#Arroz_con_leche">Arroz con leche</a></li>
+      <li><a href="#Dulce_de_leche">Dulce de leche</a></li>
+      <li><a href="#Crema_catalana">Crema catalana</a></li>
+      <li><a href="#Tarta_de_chocolate">Tarta de chocolate</a></li>
+      <li><a href="#Tarta_de_manzana">Tarta de manzana</a></li>
+    </ul>
+  </nav>
   <div class="n"></div>
-<main>
+  <main>
 
-  <div class="Tiramisú"></div>
-  <div class="Arroz_con_leche"></div>
-  <div class="Dulce_de_leche"></div>
-  <div class="Crema_catalana"></div>
-  <div class="Tarta_de_chocolate"></div>
+    <div id="recetas">
+    <div class="Tiramisu" id="Tiramisu">
+      <form action="">
+        <h1>Tiramisú</h1>
+        <div id="_2c">
+          <input type="checkbox" class="ckeck1" name="Tiramisu" id="_2_columnas">
+          <label for="_2_columnas">2 columnas</label>
+        </div>
+        <div id="ing">
+          <input type="checkbox" name="Tiramisu" id="_ingles">
+          <label for="_ingles">Ingles</label>
+        </div>
+        <div id="imagen"></div>
+        <div class="texto" id="Tiramisutexte">
+          <div class="espanol esp1">
+            En un bol se prepara la crema para el tiramisú: se mezcla el queso
+            mascarpone con las yemas de huevo y el azúcar.
+            Aparte, se baten las claras de huevo a punto de nieve. Finalmente, se incorporan las claras al bol del
+            mascarpone. Se
+            bate con cuidado, con las varillas, realizando movimientos envolventes, para no perder el aire de las
+            claras
+            montadas,
+            (como haciendo una mousse).
+            En una bandeja honda, montamos el postre, para ello, vamos colocando capas de bizcochos duros (soletilla)
+            y
+            los mojamos
+            con café. Sobre una capa de bizcochos mojados en café, ponemos una capa de crema de mascarpone, después
+            otra
+            de
+            bizcochos, otra de crema... etc. Sube los niveles que quieras, hasta terminar con una capa
+    
+          </div>
+
+            <div class="ingles ing1 ">
+              In a bowl, prepare the cream for tiramisu: mix the mascarpone cheese with the egg yolks and sugar.
+              Apart, beat the egg whites to stiff peaks. Finally, add the whites to the bowl of mascarpone. Beat
+              carefully
+              with the
+              whisk, making enveloping movements, not to lose the air of the whipped whites, (like making a mousse).
+              In a deep tray, we mount the dessert, for this, we go placing layers of hard biscuits (soletilla) and we
+              soak
+              them with
+              coffee. On a layer of biscuits soaked in coffee, we put a layer of mascarpone cream, then another of
+              biscuits,
+              another of
+              cream ... etc. Raise the levels you want, until you finish with a layer of cream.
+              Sift a little cocoa powder over the last layer. Tiramisu is a dessert that must be in the fridge for a few
+              hours.
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="__"></div>
+      <div id="Arroz_con_leche" class="Arroz_con_leche">
+        <form action="">
+          <h1>Arroz con leche</h1>
+          <div id="_2c">
+            <input type="checkbox" name="Arroz_con_leche" id="_2_columnas">
+            <label for="_2_columnas">2 columnas</label>
+          </div>
+          <div id="ing">
+            <input type="checkbox" name="Arroz_con_leche" id="_ingles">
+            <label for="_ingles">Ingles</label>
+          </div>
+          <div id="imagen"></div>
+          <div class="texto" id="Arroz_con_lechtexte">
+            <div class="espanol">
+              Ponemos a cocer la leche, con la ramita de canela, el azúcar y la piel de limón.
+              Lavamos el arroz con abundante agua fría para quitarle el almidón.
+              Cuando la leche cueza, añadimos el arroz y cocemos a fuego medio / bajo casi una hora, hasta que el arroz
+              esté blando y
+              la leche haya espesado lo suficiente (aquí se puede controlar por gustos, arroz con leche más espeso o más
+              líquido),
+              retiramos la corteza de limón y la canela en rama y servimos en cuencos, dejamos enfriar y espolvoreados
+              por
+              encima con
+              canela en polvo.
+            </div>
+
+            <div class="ingles">
+              We put to cook the milk, with the cinnamon stick, the sugar and the lemon peel.
+              We wash the rice with plenty of cold water to remove the starch.
+              When the milk boils, we add the rice and cook over medium / low heat almost an hour, until the rice is
+              soft
+              and the
+              milk has thickened enough (here you can control by tastes, thicker rice pudding or more liquid), we remove
+              the
+              lemon peel and the cinnamon stick and serve in bowls, let cool and sprinkle with cinnamon powder on top.
+            </div>
+          </div>
+        </form>
+      </div>
 
 
-</main>
-  <footer></footer>
+
+
+
+
+      <div class="___"></div>
+
+      <div id="Dulce_de_leche" class="Dulce_de_leche">
+        <form action="">
+          <h1>Dulce de leche</h1>
+          <div id="_2c">
+            <input type="checkbox" name="Dulce_de_leche" id="_2_columnas">
+            <label for="_2_columnas">2 columnas</label>
+          </div>
+          <div id="ing">
+            <input type="checkbox" name="Dulce_de_leche" id="_ingles">
+            <label for="_ingles">Ingles</label>
+          </div>
+          <div id="imagen"></div>
+          <div class="texto" id="Dulce_de_lechtexte">
+            <div class="espanol">
+              Colocar todos los ingredientes en un recipiente grande, preferentemente de cobre o aluminio, a fuego
+              fuerte,
+              durante
+              unas horas, hasta que tome color y comience a hervir.
+              Tener especial cuidado al romper el primer hervor, revolver y evitar que se derrame.
+              Dejar hervir espesar, bajar el fuego al mínimo revolviendo cada tanto
+              con una cuchara de madera.
+              Cuando al sacar un poquito en un plato, y dividirlo por la mitad con una cuchara, no se unen las partes,
+              está hecho.
+              Al sacarlo del fuego, continuar revolviendo durante un rato hasta que pierda un poco de temperatura pues
+              de
+              lo
+              contrario, se puede cortar. Al retirarlo del fuego, y mientras se revuelve, se puede apoyar el recipiente
+              sobre agua
+              fría para ayudar a entibiar más rápido
+            </div>
+            <div class="ingles">
+              Place all the ingredients in a large container, preferably copper or aluminum, over high heat, for a few
+              hours, until
+              it takes color and begins to boil.
+              Be especially careful when breaking the first boil, stir and avoid spilling.
+              Let boil thicken, lower the heat to the minimum stirring from time to time
+              with a wooden spoon.
+              When you take a little out on a plate, and divide it in half with a spoon, the parts do not join, it's
+              done.
+              When you take it off the fire, continue stirring for a while until it loses a little temperature because
+              otherwise, it
+              can be cut. When you take it off the fire, and while you stir, you can support the container on cold water
+              to help
+              cool down faster
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="Crema_catalana" id="Crema_catalana">
+        <form action="">
+          <h1>Crema catalana</h1>
+          <div id="2c">
+            <input type="checkbox" name="Crema_catalana" id="_2_columnas">
+            <label for="_2_columnas">2 columnas</label>
+          </div>
+          <div id="ing">
+            <input type="checkbox" name="Crema_catalana" id="_ingles">
+            <label for="_ingles">Ingles</label>
+          </div>
+          <div id="imagen"></div>
+          <div class="texto" id="Crema_catalanatexte">
+            <div class="espanol">
+              En un bol, mezclar la leche, la nata, la vainilla, el azúcar y las yemas de huevo.
+              Colocar la mezcla en una cacerola y calentar a fuego medio, revolviendo constantemente con una cuchara de
+              madera.
+              Cuando la mezcla empiece a hervir, retirar del fuego y dejar enfriar.
+              Colocar la mezcla en un molde de silicona y llevar al horno precalentado a 180ºC durante 30 minutos.
+              Retirar del horno y dejar enfriar.
+              Desmoldar y servir.
+            </div>
+            <div class="ingles">
+              In a bowl, mix the milk, cream, vanilla, sugar and egg yolks.
+              Place the mixture in a saucepan and heat over medium heat, stirring constantly with a wooden spoon.
+              When the mixture begins to boil, remove from heat and let cool.
+              Place the mixture in a silicone mold and bring to the preheated oven at 180ºC for 30 minutes.
+              Remove from the oven and let cool.
+              Unmold and serve.
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+      <div class="Tarta_de_chocolate" id="Tarta_de_chocolate">
+        <form action="">
+          <h1 id="T">
+            Tarta de chocolate
+          </h1>
+          <!-- checkbox -->
+          <div id="_2c">
+            <input type="checkbox" name="Tarta_de_chocolate" id="_2_columnas">
+            <label for="2_columnas">2 columnas</label>
+          </div>
+          <!-- input type="checkbox" que texto en ingles-->
+          <div id="ing">
+
+            <input type="checkbox" name="Tarta_de_chocolate" id="_ingles">
+            <label for="ingles">Ingles</label>
+          </div>
+          <div id="imagen"></div>
+          <div class="texto" id="Tarta_de_chocolatetexte">
+            <div class="espanol">
+              Preparamos un chocolate a la taza bien espeso: en una cazuela echamos un poco de agua y el chocolate de
+              hacer, cuando se
+              haya derretido, añadimos leche (reservando como un vaso y medio), seguimos removiendo hasta que cueza,
+              luego aflojamos
+              el fuego y continuamos removiendo y añadiendo colacao, hasta conseguir un chocolate muy espeso.
+              Dejamos enfriando (y espesando) el chocolate. Calentamos el resto de la leche y echamos un poco de cacao
+              soluble.
+              Ahora solo hay que ir montando la tarta, mojando las galletas en la leche y colocándolas en el molde para
+              hacer una
+              base, después colocamos una capa de chocolate, otra de galletas
+
+            </div>
+            <div class="ingles">
+              We prepare a thick chocolate cup: in a saucepan we put a little water and the chocolate to make, when it
+              has melted, we add milk (reserving a glass and a half), we continue stirring until it boils, then we lower
+              the heat and continue stirring and adding colacao, until we get a very thick chocolate.
+              We leave the chocolate cooling (and thickening). We heat the rest of the milk and we add a little cocoa
+              powder.
+              Now we just have to mount the cake, soaking the cookies in the milk and placing them in the mold to make a
+              base, then we place a layer of chocolate, another of cookies
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="Tarta_de_manzana" id="Tarta_de_manzana">
+        <form action="">
+          <h1>Tarta de manzana</h1>
+          <div id="_2c">
+            <input type="checkbox" name="Tarta_de_manzana" id="_2_columnas" class="all">
+            <label for="2_columnas">2 columnas</label>
+          </div>
+          <!-- input type="checkbox" que texto en ingles-->
+          <div id="ing">
+            <input type="checkbox" name="Tarta_de_manzana" id="_ingles">
+            <label for="ingles">Ingles</label>
+          </div>
+          <div id="imagen"></div>
+          <div class="texto" id="Tarta_de_manzanatexte">
+            <div class="espanol">
+              En un bol, mezclar la mantequilla con el azúcar hasta que quede una crema.
+              Añadir las yemas de huevo y seguir batiendo.
+              Incorporar la harina y la levadura y mezclar bien.
+              Colocar la masa en un molde de silicona y llevar al horno precalentado a 180ºC durante 20 minutos.
+              Retirar del horno y dejar enfriar.
+              Mientras tanto, pelar las manzanas y cortarlas en rodajas.
+              En una sartén, calentar la mantequilla y añadir las manzanas.
+              Saltear durante 5 minutos y dejar enfriar.
+              Colocar las manzanas en el molde y llevar al horno precalentado a 180ºC durante 20 minutos.
+              Retirar del horno y dejar enfriar.
+              Desmoldar y servir.
+            </div>
+            <div class="ingles">
+              In a bowl, mix the butter with the sugar until it becomes a cream.
+              Add the egg yolks and continue beating.
+              Incorporate the flour and baking powder and mix well.
+              Place the dough in a silicone mold and bring to the preheated oven at 180ºC for 20 minutes.
+              Remove from the oven and let cool.
+              Meanwhile, peel the apples and cut them into slices.
+              In a skillet, heat the butter and add the apples.
+              Sauté for 5 minutes and let cool.
+              Place the apples in the mold and bring to the preheated oven at 180ºC for 20 minutes.
+              Remove from the oven and let cool.
+              Unmold and serve.
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+  <footer>
+    mohamed el Derkaoui 2020 (c)
+  </footer>
+
 </html>
