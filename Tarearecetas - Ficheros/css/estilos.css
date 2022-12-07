@@ -19,14 +19,14 @@ body {
   background-color: #f4f4f4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
-  grid-template-rows: 30% 1fr 5% 8% 0.5fr 0.1fr;
+  grid-template-rows: 30% 1fr 5% 8% 1fr 0.1fr;
   grid-template-areas:
-    ". header header header header "
-    " . header header header  header "
-    " . logo ll  ti  ti "
-    " . nav   n n  n "
-    " . main main main  main "
-    " . footer footer footer  footer ";
+    '. header header header header '
+    ' . header header header  header '
+    ' . logo ll  ti  ti '
+    ' . nav   n n  n '
+    ' . main main main  main '
+    ' . footer footer footer  footer ';
 }
 footer {
   grid-area: footer;
@@ -39,8 +39,8 @@ header {
   /*
   see the full header image without repeating , centered and with a size of 100% of header
   */
-  
-  background: url("img/header.jpg");
+
+  background: url('img/header.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -54,32 +54,34 @@ header {
 }
 .logo {
   grid-area: logo;
-  background:rgb(247, 123, 0) url("img/logotipo.png") no-repeat center center/cover;
+  background: rgb(247, 123, 0) url('img/logotipo.png') no-repeat center
+    center/cover;
   color: rgb(247, 123, 0);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
 }
 .ti {
   grid-area: ti;
-  background-color:rgb(247, 123, 0);
+  background-color: rgb(247, 123, 0);
   color: #fff;
   padding: 1rem;
-  content: "postres lx";
+  content: 'postres lx';
 }
-.ll,.logo,.ti {
+.ll,
+.logo,
+.ti {
   display: flex;
   justify-content: center;
   align-items: center;
-    background-color:rgb(79, 39, 2);
+  background-color: rgb(79, 39, 2);
 }
 nav {
   grid-area: nav;
   background-color: green;
   color: #fff;
   padding: 1rem;
-
 }
 .n {
   grid-area: n;
@@ -98,15 +100,14 @@ main {
   background-color: #f0378a;
   color: #fff;
   padding: 1rem;
-  
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas:
-    "maindivreceta";
+  grid-template-areas: 'maindivreceta';
 }
-main>div#recetas {
+main > div#recetas {
   grid-area: maindivreceta;
   background-color: rgb(87, 76, 74);
   color: rgb(255, 251, 250);
@@ -117,53 +118,37 @@ main>div#recetas {
   grid-template-rows: repeat(13, 1fr);
   gap: 0px 0px;
   grid-template-areas:
-    ". . ."
-    ". Tiramisu  ."
-    ". __ ."
-    ". Arroz_con_leche ."
-    ". . ."
-    ". Dulce_de_leche ."
-    ". ___ ."
-    ". Crema_catalana ."
-    ". _ ."
-    ". Tarta_de_chocolate ."
-    ". . ."
-    ". Tarta_de_manzana ."
-    ". . ."
-    ;
+    '. . .'
+    '. Tiramisu  .'
+    '. . .'
+    '. Arroz_con_leche .'
+    '. . .'
+    '. Dulce_de_leche .'
+    '. . .'
+    '. Crema_catalana .'
+    '. . .'
+    '. Tarta_de_chocolate .'
+    '. . .'
+    '. Tarta_de_manzana .'
+    '. . .';
 }
-._{
-  grid-area: _;
-}
-.__{
-  grid-area: __;
-  background-color: rgba(87, 76, 74, 0);
-}
-.___{
-  grid-area: ___;
-  background-color: rgba(87, 76, 74, 0);
-}
-.Tarta_de_manzana
-{
+.Tarta_de_manzana {
   grid-area: Tarta_de_manzana;
 }
 /*  grid-area: Tiramisu*/
-.Tiramisu{
+.Tiramisu {
   grid-area: Tiramisu;
 }
-.Arroz_con_leche
-{
+.Arroz_con_leche {
   grid-area: Arroz_con_leche;
 }
-#Dulce_de_leche
-{
+.Dulce_de_leche {
   grid-area: Dulce_de_leche;
 }
-.Crema_catalana{
+.Crema_catalana {
   grid-area: Crema_catalana;
-
 }
-.Tarta_de_chocolate{
+.Tarta_de_chocolate {
   grid-area: Tarta_de_chocolate;
 }
 /*
@@ -172,10 +157,10 @@ if you click on nav, the dropdown menu opens downwards .
 dropdownon nav>h1 github copilot
 */
 
-nav>ul {
+nav > ul {
   display: none;
 }
-nav:hover>ul {
+nav:hover > ul {
   display: block;
   position: absolute;
   background-color: #0f0e0e;
@@ -183,13 +168,13 @@ nav:hover>ul {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-nav>ul>li {
+nav > ul > li {
   color: rgb(255, 255, 255);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-nav>ul>li:hover {
+nav > ul > li:hover {
   background-color: rgb(7, 7, 7);
 }
 /*  a sin formato*/
@@ -201,425 +186,187 @@ a {
 :target {
   border: 4px solid rgb(255, 2, 133);
 }
-
-/*
-ocutar texto din.ingles
-*/
-div.ingles{
-  visibility: hidden;
-}
-#_ingles:checked~div .ingles{
-visibility: visible;
-}
-
-#_ingles:checked~div .espanol{
-  position: absolute;
-visibility: hidden;
-}/* 
-main>div>div{  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
-}
-
-._2_C { grid-area: _2_C; }
-
-._I_ { grid-area: _I_; }
-
-.IMG { grid-area: IMG; }
-
-.T { grid-area: T; }
-main>div>form>h1{grid-area: TT;}
- */
- main>div{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ".  .  ."
-    ".  lll  ."
-    ".  .  .";
-}
-
- main>div>div{
-  grid-area: lll;
-  background-color: #0f0e0e;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "lll";
- }
- main>div>div>form{
-  grid-area: lll;
-  background-color: #0f0e0e;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
-}
-
-
-   
-.Tiramisu>form >#imagen {
+.Tiramisu > div > #imagen {
   grid-area: imagen;
- /*
+  /*
  poner imagen de fondo
  100% de ancho y alto
   centrada
   no repetir
  */
-  background: url("img/Tiramisu.jpg") no-repeat center center/cover;
+  background: url('img/Tiramisu.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
 }
 /*Arroz_con_leche*/
-.Arroz_con_leche>form >#imagen {
+.Arroz_con_leche > div > #imagen {
   grid-area: imagen;
-  background: url("img/arroz_leche.jpg") no-repeat center center/cover;
+  background: url('img/arroz_leche.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
 }
 /*Dulce_de_leche*/
-.Dulce_de_leche>form >#imagen {
+.Dulce_de_leche > div > #imagen {
   grid-area: imagen;
-  background: url("img/dulce_leche.jpg") no-repeat center center/cover;
+  background: url('img/dulce_leche.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
-} 
+}
 /*Crema_catalana*/
-.Crema_catalana>form >#imagen {
+.Crema_catalana > div > #imagen {
   grid-area: imagen;
-  background: url("img/crema_catalana.jpg") no-repeat center center/cover;
+  background: url('img/crema_catalana.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
 }
 /*Tarta_de_chocolate*/
-.Tarta_de_chocolate>form >#imagen {
+.Tarta_de_chocolate > div > #imagen {
   grid-area: imagen;
-  background: url("img/tarta_chocolate.jpg") no-repeat center center/cover;
+  background: url('img/tarta_chocolate.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
 }
 /*Tarta_de_manzana*/
-.Tarta_de_manzana>form >#imagen {
+.Tarta_de_manzana > div > #imagen {
   grid-area: imagen;
-  background: url("img/tarta_manzana.jpg") no-repeat center center/cover;
+  background: url('img/tarta_manzana.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: 100px 100px;
   padding: 1rem;
-}.Crema_catalana {
-  background-color: #0f0e0e;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
 }
-
-#Crema_catalana form {
-  grid-area: lll;
+#_2_columnas:checked ~ #Tiramisutexte {
+  column-count: 2;
 }
-
-#Crema_catalana h1 {
-  grid-area: TT;
+#_2_columnas:checked ~ #Arroz_con_lechtexte {
+  column-count: 2;
 }
-
-#Crema_catalana #2c, #Crema_catalana #ing {
-  grid-area: _2_C;
+#_2_columnas:checked ~ #Dulce_de_lechtexte {
+  column-count: 2;
 }
-
-#Crema_catalana #imagen {
-  grid-area: IMG;
+#_2_columnas:checked ~ #Crema_catalanatexte {
+  column-count: 2;
 }
-
-#Crema_catalana .texto {
-  grid-area: T;
+#_2_columnas:checked ~ #Tarta_de_chocolatetexte {
+  column-count: 2;
 }
-.Dulce_de_leche {
-  background-color: #0f0e0e;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
+#_2_columnas:checked ~ #Tarta_de_manzanatexte {
+  column-count: 2;
 }
-
-#Dulce_de_leche form {
-  grid-area: lll;
-}
-
-#Dulce_de_leche h1 {
-  grid-area: TT;
-}
-
-#Dulce_de_leche #_2c, #Dulce_de_leche #ing {
-  grid-area: _2_C;
-}
-
-#Dulce_de_leche #imagen {
-  grid-area: IMG;
-}
-
-#Dulce_de_leche .texto {
-  grid-area: T;
-}
-.Arroz_con_leche {
-  background-color: #0f0e0e;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
-}
-
-#Arroz_con_leche form {
-  grid-area: lll;
-}
-
-#Arroz_con_leche h1 {
-  grid-area: TT;
-}
-
-#Arroz_con_leche #_2c, #Arroz_con_leche #ing {
-  grid-area: _2_C;
-}
-
-#Arroz_con_leche #imagen {
-  grid-area: IMG;
-}
-
-#Arroz_con_leche .texto {
-  grid-area: T;
-}
-#Tiramisu {
-  background-color: #F8F8FF;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
-}
-
-#Tiramisu form {
-  grid-area: lll;
-}
-
-#Tiramisu h1 {
-  grid-area: TT;
-}
-
-#Tiramisu #_2c{
-  grid-area: _2_C;
-}
-
-#Tiramisu #ing {
-  grid-area: _I_;
-}
-
-#Arroz_con_leche #imagen {
-  grid-area: IMG;
-}
-
-#Arroz_con_leche .texto {
-  grid-area: T;
-}
-
-#Tiramisu #imagen {
-  grid-area: IMG;
-}
-
-#Tarta_de_chocolate{
-  background-color: #F8F8FF;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
-}
-
-#Tarta_de_chocolate form {
-  grid-area: lll;
-} 
-
-#Tarta_de_chocolate h1 {
-  grid-area: TT;
-}
-
-#Tarta_de_chocolate #_2c{
-  grid-area: _2_C;
-} 
-
-#Tarta_de_chocolate #ing {
-  grid-area: _I_;
-}
-
-#Tarta_de_chocolate #imagen {
-  grid-area: IMG;
-}
-
-#Tarta_de_chocolate .texto {
-  grid-area: T;
-}
-
-#Tarta_de_manzana{
-  background-color: #F8F8FF;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". TT TT TT TT ."
-    ". _2_C _I_ . . ."
-    ". . . . IMG ."
-    "T T T T T T"
-    "T T T T T T"
-    "T T T T T T";
-}
-
-#Tarta_de_manzana form {
-  grid-area: lll;
-}
-
-#Tarta_de_manzana h1 {
-  grid-area: TT;
-}
-
-#Tarta_de_manzana #_2c{
-  grid-area: _2_C;
-}
-
-#Tarta_de_manzana #ing {
-  grid-area: _I_;
-}
-
-#Tarta_de_manzana #imagen {
-  grid-area: IMG;
-}
-
-#Tarta_de_manzana .texto {
-  grid-area: T;
-}
-
 /*
-  <div class="Tarta_de_manzana" id="Tarta_de_manzana">
-        <form action="">
-          <h1>Tarta de manzana</h1>
-          <div id="_2c">
-            <input type="checkbox" name="Tarta_de_manzana" id="_2_columnas" class="all">
-            <label for="2_columnas">2 columnas</label>
-          </div>
-          <!-- input type="checkbox" que texto en ingles-->
-          <div id="ing">
-            <input type="checkbox" name="Tarta_de_manzana" id="_ingles">
-            <label for="ingles">Ingles</label>
-          </div>
-          <div id="imagen"></div>
-          <div class="texto" id="Tarta_de_manzanatexte">
-            <div class="espanol">
-              En un bol, mezclar la mantequilla con el azúcar hasta que quede una crema.
-              Añadir las yemas de huevo y seguir batiendo.
-              Incorporar la harina y la levadura y mezclar bien.
-              Colocar la masa en un molde de silicona y llevar al horno precalentado a 180ºC durante 20 minutos.
-              Retirar del horno y dejar enfriar.
-              Mientras tanto, pelar las manzanas y cortarlas en rodajas.
-              En una sartén, calentar la mantequilla y añadir las manzanas.
-              Saltear durante 5 minutos y dejar enfriar.
-              Colocar las manzanas en el molde y llevar al horno precalentado a 180ºC durante 20 minutos.
-              Retirar del horno y dejar enfriar.
-              Desmoldar y servir.
-            </div>
-            <div class="ingles">
-              In a bowl, mix the butter with the sugar until it becomes a cream.
-              Add the egg yolks and continue beating.
-              Incorporate the flour and baking powder and mix well.
-              Place the dough in a silicone mold and bring to the preheated oven at 180ºC for 20 minutes.
-              Remove from the oven and let cool.
-              Meanwhile, peel the apples and cut them into slices.
-              In a skillet, heat the butter and add the apples.
-              Sauté for 5 minutes and let cool.
-              Place the apples in the mold and bring to the preheated oven at 180ºC for 20 minutes.
-              Remove from the oven and let cool.
-              Unmold and serve.
-            </div>
-          </div>
-        </form>
-
-      </div>
-
-if _2_columnas is checked, then show the 2 columnas in nav > form> .texto> div  is column-count: 2;
+ocutar texto din.ingles VISIBILIDAD
+quitar los espacios quedan 
 */
-div>#_2_columnas:checked ~ .texto~.espanol {
-  column-count: 2;
+
+div.espanol {
+  visibility: visible;
+  font-size: 1rem;
+}
+div.ingles {
+  visibility: hidden;
+  /*
+  quitar los espacio queda
+  */
+  font-size: 0;
+}
+input#ingles:checked ~ div .ingles {
+  visibility: visible;
+  font-size: 1rem;
+}
+input#ingles:checked ~ div .espanol {
+  visibility: hidden;
+  font-size: 0;
+}
+/*
+*/
+main > div {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    '. h1 h1 h1 h1 h1 h1 h1 .'
+    '. c2 c2_ ing_b ing_t . . . .'
+    '. . . . . . ima ima  .'
+    '. . . . . . ima ima  .'
+    'texo texo texo texo texo texo texo texo texo'
+    'texo texo texo texo texo texo texo texo texo'
+    'texo texo texo texo texo texo texo texo texo ';
+}
+/*  grid-area: h1*/
+main > div > h1 {
+  grid-area: h1;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+/*  grid-area: c2*/
+main > div > div.c2 {
+  grid-area: c2;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+}
+/*  grid-area: c2_*/
+main > div > div.c2_ {
+  grid-area: c2_;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+}
+/*  grid-area: ing_b*/
+main > div > div.ing_b {
+  grid-area: ing_b;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+}
+/*  grid-area: ing_t*/
+main > div > div.ing_t {
+  grid-area: ing_t;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
 }
 
-div>#_2_columnas:checked ~.texto .ingles {
-  column-count: 2;
+/*  grid-area: ima*/
+main > div > div.ima {
+  grid-area: ima;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+}
+
+#ingles {
+  /*
+visible al lado del texto
+*/
+  visibility: visible;
+  size: 1rem 1rem;
+}
+
+/*  grid-area: texo*/
+main > div > div.texo> div.espanol,
+main > div > div.texo> div.ingles{
+  grid-area: texo;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
 }
