@@ -1,0 +1,4 @@
+#coche,
+#ventana,
+#puerta{font-size: 0;}
+#car:hover ~ td #coche, #window:hover~#vetana,#door:hover~  #perta{font-size: 1em;}

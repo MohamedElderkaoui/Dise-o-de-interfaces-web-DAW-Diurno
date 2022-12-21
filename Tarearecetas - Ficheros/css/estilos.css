@@ -370,3 +370,72 @@ main > div > div.texo> div.ingles{
   color: #fff;
   text-align: justify;
 }
+
+/*  grid-area: texo*/
+main > div > div.texo> div.espanol,
+main > div > div.texo> div.ingles{
+  grid-area: texo;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+}
+
+/* NO VER IMAGENES */
+#_2_columnas:checked ~ #Tiramisutexte > div > div.ima {
+  visibility: hidden;
+  font-size: 0;
+}
+/* VER IMAGENES */
+ div.ima {
+  visibility: visible;
+  height: auto;
+  width: auto;
+}
+div.imagen {
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 
+img flota a la derecha del div 
+*/
+img {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*
+ above  div.texto
+  */
+
+  
+
+}
+/*
+   above and outside div.texto
+*/
+img {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*
+  above  div.texto
+  */
+  position: relative;
+  top: -2rem;
+}
+main>div>div,.texto{
+  background: rgb(242, 2, 2);
+  border: 1px solid #fff;
+
+}

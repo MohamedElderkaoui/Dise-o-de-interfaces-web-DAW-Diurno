@@ -1,0 +1,11 @@
+body>div{
+    border: 1px black solid;
+    
+}
+.Ddisc,#circle,#square{
+visibility: hidden;
+font: 0em sans-serif;
+}
+.disc:checked ~ .Ddisc, #_circle:checked~#circle,
+#_square~#square{
+     visibility: visible;font: 2em sans-serif;}
