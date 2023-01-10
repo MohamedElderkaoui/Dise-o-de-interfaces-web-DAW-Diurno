@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+  #skyline {
+    width: 400px; height: 200px;
+    background: url(test-3.jpg);
+    margin: 10px auto; padding: 0;
+    position: relative;}
+  #skyline li {
+    margin: 0; padding: 0; list-style: none;
+    position: absolute; top: 0;}
+  #skyline li, #skyline a {
+    height: 200px; display: block;}
+</style>
+</head>
+<body>
+ <ul id="skyline">
+    <li id="panel1b"><a href="#1"></a></li>
+    <li id="panel2b"><a href="#2"></a></li>
+    <li id="panel3b"><a href="#3"></a></li>
+    <li id="panel4b"><a href="#4"></a></li>
+  </ul>
+</body>
+</html>
