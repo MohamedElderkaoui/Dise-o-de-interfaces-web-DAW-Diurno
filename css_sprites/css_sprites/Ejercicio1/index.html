@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<style>
-  /*
-  •	En base a las imágenes en sprite1.jpg, se debe generar un menú para cada uno de los textos, de modo que al pasar el ratón por encima de alguno de los enlaces, se superponga la zona correspondiente de la segunda imagen del sprite sobre la primera.
-Se adjunta un video para ver como debe ser el resultado final.
-
-  */
-  #skyline {
-    width: 400px; height: 200px;
-    background: url(sprite1.jpg);
-    margin: 10px auto; padding: 0;
-    position: relative;}
-  #skyline li {
-    margin: 0; padding: 0; list-style: none;
-    position: absolute; top: 0;}
-  #skyline li, #skyline a {
-    width: 100px; height: 100px;}
-      #panel1b {
-        left: 0;
-        width: 100px;
-        background: url(sprite1.jpg) 0 0;
-        }
-  #panel2b {
-    left: 100px;
-    width: 100px;
-    background: url(sprite1.jpg) -100px 0;
-  }
-  #panel3b {
-
-    left: 200px;
-    width: 100px;
-    background: url(sprite1.jpg) -200px 0;
-  }
-  #panel4b {
-    left: 300px;
-    width: 100px;
-    background: url(sprite1.jpg) -300px 0;
-  }
-
-  #panel1b a:hover {
-    background: url(sprite1.jpg) 0 -100px;  }
-  #panel2b a:hover {
-    background: url(sprite1.jpg) -100px -100px;
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+  <style>
+    #skyline {
+      width: 400px;
+      height: 200px;
+      background: url(sprite1.jpg);
+      margin: 10px auto;
+      padding: 0;
+      position: relative;
     }
-  #panel3b a:hover {
-    background: url(sprite1.jpg) -200px -100px;
+
+    #skyline li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      top: 0;
     }
-  #panel4b a:hover {
-    background: url(sprite1.jpg) -300px -100px;
+
+    #skyline li,
+    #skyline a {
+      height: 200px;
+      display: block;
     }
-</style>
+
+    #panel1b {
+      left: 0;
+      width: 95px;
+    }
+
+    #panel2b {
+      left: 96px;
+      width: 75px;
+    }
+
+    #panel3b {
+      left: 172px;
+      width: 110px;
+    }
+
+    #panel4b {
+      left: 283px;
+      width: 117px;
+    }
+
+    #panel1b a:hover {
+      background: transparent url(sprite1.jpg) 0 -200px no-repeat;
+    }
+
+    #panel2b a:hover {
+      background: transparent url(sprite1.jpg) -96px -200px no-repeat;
+    }
+
+    #panel3b a:hover {
+      background: transparent url(sprite1.jpg) -172px -200px no-repeat;
+    }
+
+    #panel4b a:hover {
+      background: transparent url(sprite1.jpg) -283px -200px no-repeat;
+    }
+  </style>
 </head>
+
 <body>
- <ul id="skyline">
+  <ul id="skyline">
     <li id="panel1b"><a href="#1"></a></li>
     <li id="panel2b"><a href="#2"></a></li>
     <li id="panel3b"><a href="#3"></a></li>
     <li id="panel4b"><a href="#4"></a></li>
   </ul>
 </body>
+
 </html>

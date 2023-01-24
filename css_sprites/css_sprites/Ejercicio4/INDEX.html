@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        with photo p.png 
+        sprite con 1275px de ancho y 120 px de alto
+        8 fotos de 120 Px de ancho y 120 px de alto
+        horizontalmente
+        CON 
+        :hover FOR HIDDEN
+
+        */
+        #objs {
+    width: 1275px;
+    height: 120px;
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+}
+
+#objs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#obj1 {
+    background-position: 0px 0px;
+}
+
+#obj2 {
+    background-position: -120px 0px;
+}
+
+#obj3 {
+    background-position: -240px 0px;
+}
+
+#obj4 {
+    background-position: -360px 0px;
+}
+
+#obj5 {
+    background-position: -480px 0px;
+}
+
+#obj6 {
+    background-position: -600px 0px;
+}
+
+#obj7 {
+    background-position: -720px 0px;
+}
+
+#obj8 {
+    background-position: -840px 0px;
+}
+#obj1:hover {
+    background:transparent url(p.png) 0px 0px no-repeat;
+}
+#obj2:hover {
+    background:transparent url(p.png) -120px 0px no-repeat;
+}
+#obj3:hover {
+    background:transparent url(p.png) -250px 0px no-repeat;
+}
+#obj4:hover {
+    background:transparent url(p.png) -400px 0px no-repeat;
+}
+#obj5:hover {
+    background:transparent url(p.png) -530px 0px no-repeat;
+}
+#obj6:hover {
+    background:transparent url(p.png) -630px 0px no-repeat;
+}
+#obj7:hover {
+    background:transparent url(p.png) -750px 0px no-repeat;
+}
+#obj8:hover {
+    background:transparent url(p.png) -900px 0px no-repeat;
+}
+/*
+li con borde de 1px
+*/
+li {
+    border: 1px solid black;
+}
+/*
+grid
+   obj1 obj2 obj3 obj4
+    obj5 obj6 obj7 obj8
+    
+sin espacios entre li
+*/
+#objs {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px;
+    grid-template-areas: 
+    "obj1 obj2 obj3 obj4"
+    "obj5 obj6 obj7 obj8";
+    grid-gap: 0px;
+}
+#obj1 {
+    grid-area: obj1;
+}
+#obj2 {
+    grid-area: obj2;
+}
+#obj3 {
+    grid-area: obj3;
+}
+#obj4 {
+    grid-area: obj4;
+}
+#obj5 {
+    grid-area: obj5;
+}
+#obj6 {
+    grid-area: obj6;
+}
+#obj7 {
+    grid-area: obj7;
+}
+#obj8 {
+    grid-area: obj8;
+}
+    </style>
+</head>
+<body>
+    
+<ul id="objs">
+    <li id="obj1"><a href="#"></a></li>
+    <li id="obj2"><a href="#"></a></li>
+    <li id="obj3"><a href="#"></a></li>
+    <li id="obj4"><a href="#"></a></li>
+    <li id="obj5"><a href="#"></a></li>
+    <li id="obj6"><a href="#"></a></li>
+    <li id="obj7"><a href="#"></a></li>
+    <li id="obj8"><a href="#"></a></li>
+</ul>
+</body>
+</html>
