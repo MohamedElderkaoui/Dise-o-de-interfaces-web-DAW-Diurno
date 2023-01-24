@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
- <style media="screen">
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style>
+        #skyline {
+            width: 400px;
+            height: 200px;
+            background: url(sprite1.jpg);
+            margin: 10px auto;
+            padding: 0;
+            position: relative;
+        }
 
-#iconmenu {
-    width: 400px; height: 200px;
-    background: url(sprite2.jpg);
-    margin: 10px auto; padding: 0;
-    position: relative;
-}
-#iconmenu li {
+        #skyline li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
 
-    margin: 0; padding: 0; list-style: none;
-    position: absolute; top: 0;
-}
-#iconmenu a {
+        #skyline li,
+        #skyline a {
+            height: 200px;
+            display: block;
+        }
 
-}
-#iconmenu a:hover {width: 100px; height: 100px;}
-#iconmenu #panel1c {
-    left: 0;
-    width: 100px;
-    background: url(sprite2.jpg) 0 0;
-}
-#iconmenu #panel2c {
-    left: 100px;
-    width: 100px;
-    background: url(sprite2.jpg) -100px 0;
-}
-#iconmenu #panel3c {
-    left: 200px;
-    width: 100px;
-    background: url(sprite2.jpg) -200px 0;
-}
-#iconmenu #panel4c {
-    left: 300px;
-    width: 100px;
-    background: url(sprite2.jpg) -300px 0;
-}
+        #panel1b {
+            left: 0;
+            width: 95px;
+        }
 
-#iconmenu #panel1c a:hover {
-    background: url(sprite2.jpg) 0 -100px;
-}
-#iconmenu #panel2c a:hover {
-    background: url(sprite2.jpg) -100px -100px;
-}
-#iconmenu #panel3c a:hover {
-    background: url(sprite2.jpg) -200px -100px;
-}
-#iconmenu #panel4c a:hover {
-    background: url(sprite2.jpg) -300px -100px;
-}
+        #panel2b {
+            left: 96px;
+            width: 75px;
+        }
 
- </style>
+        #panel3b {
+            left: 172px;
+            width: 110px;
+        }
+
+        #panel4b {
+            left: 283px;
+            width: 117px;
+        }
+
+        #panel1b a:hover {
+            background: transparent url(sprite1.jpg) 0 -200px no-repeat;
+        }
+
+        #panel2b a:hover {
+            background: transparent url(sprite1.jpg) -96px -200px no-repeat;
+        }
+
+        #panel3b a:hover {
+            background: transparent url(sprite1.jpg) -172px -200px no-repeat;
+        }
+
+        #panel4b a:hover {
+            background: transparent url(sprite1.jpg) -283px -200px no-repeat;
+        }
+    </style>
 </head>
 
 <body>
- <ul id="iconmenu">
-  <li id="panel1c"><a href="#"></a></li>
-  <li id="panel2c"><a href="#"></a></li>
-  <li id="panel3c"><a href="#"></a></li>
-  <li id="panel4c"><a href="#"></a></li>
- </ul>
+    <ul id="skyline">
+        <li id="panel1b"><a href="#1"></a></li>
+        <li id="panel2b"><a href="#2"></a></li>
+        <li id="panel3b"><a href="#3"></a></li>
+        <li id="panel4b"><a href="#4"></a></li>
+    </ul>
 </body>
+
 </html>
