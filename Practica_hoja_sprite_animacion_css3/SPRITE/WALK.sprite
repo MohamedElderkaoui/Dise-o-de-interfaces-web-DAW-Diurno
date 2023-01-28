@@ -1,0 +1,27 @@
+{
+   "style_name": "WALK",
+   "images": [
+      "..\\IMG\\_Walk (8).png",
+      "..\\IMG\\_Walk (7).png",
+      "..\\IMG\\_Walk (6).png",
+      "..\\IMG\\_Walk (5).png",
+      "..\\IMG\\_Walk (4).png",
+      "..\\IMG\\_Walk (3).png",
+      "..\\IMG\\_Walk (2).png",
+      "..\\IMG\\_Walk (1).png",
+      "..\\IMG\\_Walk (9).png",
+      "..\\IMG\\_Walk (10).png",
+      "..\\IMG\\_Walk (11).png",
+      "..\\IMG\\_Walk (12).png",
+      "..\\IMG\\_Walk (13).png"
+   ],
+   "orientation": "horizontal",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "css",
+   "path_prefix": "",
+   "output": "png",
+   "enable_cache_busting": true
+}

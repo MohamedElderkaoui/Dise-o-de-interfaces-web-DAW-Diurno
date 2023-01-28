@@ -1,0 +1,25 @@
+{
+   "style_name": "RUN",
+   "images": [
+      "..\\IMG\\_Run (1).png",
+      "..\\IMG\\_Run (2).png",
+      "..\\IMG\\_Run (3).png",
+      "..\\IMG\\_Run (4).png",
+      "..\\IMG\\_Run (5).png",
+      "..\\IMG\\_Run (6).png",
+      "..\\IMG\\_Run (7).png",
+      "..\\IMG\\_Run (8).png",
+      "..\\IMG\\_Run (9).png",
+      "..\\IMG\\_Run (10).png",
+      "..\\IMG\\_Run (11).png"
+   ],
+   "orientation": "horizontal",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "css",
+   "path_prefix": "",
+   "output": "png",
+   "enable_cache_busting": true
+}

@@ -1,0 +1,30 @@
+{
+   "style_name": "IDLESPRITE",
+   "images": [
+      "..\\IMG\\_Idle (1).png",
+      "..\\IMG\\_Idle (2).png",
+      "..\\IMG\\_Idle (3).png",
+      "..\\IMG\\_Idle (4).png",
+      "..\\IMG\\_Idle (5).png",
+      "..\\IMG\\_Idle (6).png",
+      "..\\IMG\\_Idle (7).png",
+      "..\\IMG\\_Idle (8).png",
+      "..\\IMG\\_Idle (9).png",
+      "..\\IMG\\_Idle (10).png",
+      "..\\IMG\\_Idle (11).png",
+      "..\\IMG\\_Idle (12).png",
+      "..\\IMG\\_Idle (13).png",
+      "..\\IMG\\_Idle (14).png",
+      "..\\IMG\\_Idle (15).png",
+      "..\\IMG\\_Idle (16).png"
+   ],
+   "orientation": "horizontal",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "css",
+   "path_prefix": "",
+   "output": "png",
+   "enable_cache_busting": true
+}

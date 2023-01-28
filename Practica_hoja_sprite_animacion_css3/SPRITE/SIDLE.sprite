@@ -1,0 +1,25 @@
+{
+   "style_name": "SIDLE",
+   "images": [
+      "..\\IMG\\_Slide (1).png",
+      "..\\IMG\\_Slide (2).png",
+      "..\\IMG\\_Slide (3).png",
+      "..\\IMG\\_Slide (4).png",
+      "..\\IMG\\_Slide (5).png",
+      "..\\IMG\\_Slide (6).png",
+      "..\\IMG\\_Slide (7).png",
+      "..\\IMG\\_Slide (8).png",
+      "..\\IMG\\_Slide (9).png",
+      "..\\IMG\\_Slide (10).png",
+      "..\\IMG\\_Slide (11).png"
+   ],
+   "orientation": "horizontal",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "css",
+   "path_prefix": "",
+   "output": "png",
+   "enable_cache_busting": true
+}

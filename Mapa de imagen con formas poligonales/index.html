@@ -14,7 +14,7 @@
         {
             content: attr(alt);
             position: absolute;
-            top: 0;
+            top: 0  ;
             left: 50%;
             transform: translateX(-50%);
             background: rgba(0,0,0,0.5);
@@ -29,6 +29,101 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        /* ALT en el centro y abajo  DE LA IMAGEN */
+      area [alt]:hover::after
+        {
+            content: attr(alt);
+            position: absolute;
+            bottom: 0  ;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /* ALT en el centro y arriba  DE LA IMAGEN */
+        area [alt]:hover::after
+        {
+            content: attr(alt);
+            position: absolute;
+            top: 0  ;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /* ALT en el centro y derecha  DE LA IMAGEN */
+        area [alt]:hover::after
+        {
+            content: attr(alt);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /* ALT en el centro y izquierda  DE LA IMAGEN */
+        area [alt]:hover::after
+        {
+            content: attr(alt);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /* ALT en el centro y arriba y derecha  DE LA IMAGEN */
+        area [alt]:hover::after
+        {
+            content: attr(alt);
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /* ALT en el centro y arriba y izquierda  DE LA IMAGEN */
+        area [alt]:hover::after
+        {
+            content:
+            attr(alt);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        /*
+        AREA
+        ALT
+        */
+        area [alt]:hover::after
+        {
+            content: attr(alt);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
         }
         
 
