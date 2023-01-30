@@ -1,0 +1,20 @@
+{
+   "style_name": "a",
+   "images": [
+      "SPRITE\\walkx.png",
+      "SPRITE\\dead.png",
+      "SPRITE\\sidle.png",
+      "SPRITE\\run.png",
+      "SPRITE\\ilde.png",
+      "SPRITE\\walk.png"
+   ],
+   "orientation": "vertical",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "css",
+   "path_prefix": "",
+   "output": "png",
+   "enable_cache_busting": true
+}

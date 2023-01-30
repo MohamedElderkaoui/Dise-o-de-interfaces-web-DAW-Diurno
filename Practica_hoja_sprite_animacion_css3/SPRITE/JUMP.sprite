@@ -18,7 +18,7 @@
       "..\\IMG\\_Jump (15).png",
       "..\\IMG\\_Jump (16).png"
    ],
-   "orientation": "vertical",
+   "orientation": "horizontal",
    "padding": 5,
    "custom_styles": {
       "display": "inline-block"

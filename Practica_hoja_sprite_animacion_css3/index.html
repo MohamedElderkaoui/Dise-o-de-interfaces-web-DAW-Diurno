@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* animation estancia en el centro y arriba en la pantalla */
+        body
+        {
+            width: 100vw;
+             height: 100vh;
+            background: url("background.png") no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        #animation
+         {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(245, 197, 5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        input, label
+        {
+            background: rgba(0,0,0,0.5);
+        }
+        /* character estancia en el centro de la pantalla */
+        #character
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 234px;
+            height: 170px;
+            background: url("a.png") no-repeat;
+           
+        }
+        
+        /*
+        with a.png 
+        do sprite animation dead, idle, jump, run y walk
+        if dead is selected, the character will be dead 
+        It is in the first row of images of 3829 x 170 px that 16 frames
+        */
+        #dead:checked ~ #character
+        {
+            background-position: 0 0;
+            animation: dead 1s steps(16) infinite;
+        }
+        @keyframes dead
+        {
+            from {background-position: 0 0;}
+            to {background-position: -3829px 0;}
+        }
+        #idle:checked ~ #character
+        {
+            background-position: 0 -170px;
+            animation: idle 2s steps(16) infinite;
+        }
+
+        @keyframes idle
+        {
+            from {background-position: 0 -170px;}
+            to {background-position: 4068px -170px;}
+        }
+        #jump:checked ~ #character
+        {
+            background-position: 0 -170px;
+            animation: jump 1s steps(11, end) infinite;
+        }
+
+        @keyframes jump
+        {
+            from {background-position: 0 -340px;}
+            to {background-position: -3829px -340px;}
+        }
+        /*steps(11)*/
+        #run:checked ~ #character
+        {
+            background-position: 0 -10px;
+            animation: run 1s steps(17, end) infinite;
+        }
+
+        @keyframes run
+        {
+            from {background-position: 0 -510px;}
+            to {background-position: -3829px -510px;}
+        }
+
+        #walk:checked ~ #character
+        {
+            background-position: 0 -680px;
+            animation: walk 1s steps(16, end) infinite;
+        }
+
+        @keyframes walk
+        {
+            from {background-position: 0 -680px;}
+            to {background-position: -3829px -680px;}
+        }
+        /* animation tiene tamaño de body */
+        #animation
+        {
+            width: 100vw;
+            height: 100vh;
+        }
+ /*
+ input y label esta en centro y arriba de la pantalla con el fondo de color gris
+ */
+        #animation
+        {
+            position: relative;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(245, 197, 5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        input, label
+        {/* input y label esta en centro y arriba de la pantalla con el fondo de color gris*/
+            background: rgba(0,0,0,0.5);
+            
+        }
+
+        /* 
+        background-position: 0 0;
+        animation: dead 1s steps(16) infinite;
+        */
+        #dead:checked ~ #character
+        {
+            background-position: 0 0;
+            animation: dead 1s steps(16) infinite;
+        }
+        @keyframes dead
+        {
+            from {background-position: 0 0;}
+            to {background-position: -3829px 0;}
+        }
+        /* 
+        background-position: 0 -170px;
+        animation: idle 2s steps(16) infinite;
+        */
+        #idle:checked ~ #character
+        {
+            background-position: 0 -170px;
+            animation: idle 2s steps(16) infinite;
+        }
+
+        @keyframes idle
+        {
+            from {background-position: 0 -170px;}
+            to {background-position: 4068px -170px;}
+        }
+        /* 
+        background-position: 0 -170px;
+        animation: jump 1s steps(11, end) infinite;
+        */
+        #jump:checked ~ #character
+        {
+            background-position: 0 -170px;
+            animation: jump 1s steps(11, end) infinite;
+        }
+
+        @keyframes jump
+        {
+            from {background-position: 0 -340px;}
+            to {background-position: -3829px -340px;}
+        }
+        /*steps(11)*/
+        /* 
+        background-position: 0 -10px;
+        animation: run 1s steps(17, end) infinite;
+        */
+        #run:checked ~ #character
+        {
+            background-position: 0 -10px;
+            animation: run 1s steps(17, end) infinite;
+        }
+
+        @keyframes run
+        {
+            from {background-position: 0 -510px;}
+            to {background-position: -3829px -510px;}
+        }
+        /* 
+        background-position: 0 -680px;
+        animation: walk 1s
+    </style>
+</head>
+<body>
+    <!--  dead, idle, jump, run y walk.  Una opción para que el usuario puede elegir es a través de elementos “radio button”.   -->
+    <div id="animation">
+        <input type="radio" name="animation" id="dead" value="dead">
+        <label for="dead">Dead</label>
+        <input type="radio" name="animation" id="idle" value="idle">
+        <label for="idle">Idle</label>
+        <input type="radio" name="animation" id="jump" value="jump">
+        <label for="jump">Jump</label>
+        <input type="radio" name="animation" id="run" value="run">
+        <label for="run">Run</label>
+        <input type="radio" name="animation" id="walk" value="walk">
+        <label for="walk">Walk</label>
+        br*25
+        
+        
+        <div id="character"></div>
+    </div>
+</body>
+</html>

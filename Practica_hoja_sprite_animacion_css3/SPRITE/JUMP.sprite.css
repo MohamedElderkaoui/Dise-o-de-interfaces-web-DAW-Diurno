@@ -4,7 +4,7 @@
 */
 
 .JUMP {
-	background-image: url('JUMP.sprite.png?v=ULFVgpmQjNALqq3JwPDY53TBtQzcQkEMwwOrV');
+	background-image: url('JUMP.sprite.png?v=1WOr2BcY3chiTeH9bCkNNeVpOmkXwjt68Psr2');
 	background-repeat: no-repeat;
 	display: inline-block;
 }
@@ -17,75 +17,75 @@
 .JUMP._Jump (2) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -170px;
+	background-position: -244px -5px;
 }
 .JUMP._Jump (3) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -335px;
+	background-position: -483px -5px;
 }
 .JUMP._Jump (4) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -500px;
+	background-position: -722px -5px;
 }
 .JUMP._Jump (5) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -665px;
+	background-position: -961px -5px;
 }
 .JUMP._Jump (6) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -830px;
+	background-position: -1200px -5px;
 }
 .JUMP._Jump (7) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -995px;
+	background-position: -1439px -5px;
 }
 .JUMP._Jump (8) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -1160px;
+	background-position: -1678px -5px;
 }
 .JUMP._Jump (9) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -1325px;
+	background-position: -1917px -5px;
 }
 .JUMP._Jump (10) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -1490px;
+	background-position: -2156px -5px;
 }
 .JUMP._Jump (11) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -1655px;
+	background-position: -2395px -5px;
 }
 .JUMP._Jump (12) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -1820px;
+	background-position: -2634px -5px;
 }
 .JUMP._Jump (13) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -1985px;
+	background-position: -2873px -5px;
 }
 .JUMP._Jump (14) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -2150px;
+	background-position: -3112px -5px;
 }
 .JUMP._Jump (15) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -2315px;
+	background-position: -3351px -5px;
 }
 .JUMP._Jump (16) {
 	width: 234px;
 	height: 160px;
-	background-position: -5px -2480px;
+	background-position: -3590px -5px;
 }
