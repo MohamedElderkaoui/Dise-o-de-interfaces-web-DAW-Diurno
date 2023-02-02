@@ -5,14 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 
+1
+1. Diseñar una página web en la que según el ancho de la ventana se mostrarán el diseño del 
+apartado a,b ó c según corresponda. El texto será responsivo aumentando o disminuyendo si 
+lo hace el ancho de la venta. 
+ a) Ancho de la ventana menor o igual a 500 px. 
+ 
+b) Ancho de la ventana mayor o igual a 500px y menor de 700px. 
+ 
+c) Ancho de la ventana mayor o igual a 700px; 
+ 
+ 
+     
+ 
+ 
+ 
+  -->
+    <style>
+        #container{
+            width: 100%;
+            height: 100vh;
+            background-color: #ccc;
+        }
+        #text{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100vh;
+        }
+        @media screen and (max-width: 500px){
+            #text{
+                font-size: 10px;
+                /*
+                change the content of the text " ancho <= 500px"
+                */
+                
+            }
+
+
+            #text::before{
+                content: "ancho <= 500px";
+                font-size: 100px;
+            }    
+
+
+        }
+        
+        @media screen and (min-width: 500px) and (max-width: 700px){
+            #text{
+                font-size: 15px;
+                
+             /*   change the content of the text " 500px < ancho < 700px"*/
+                
+                content: "500px < ancho < 700px";
+
+            }
+
+            #text::before{
+                content: "500px < ancho < 700px";
+                font-size: 100px;
+            }
+        }
+        @media screen and (min-width: 700px){
+               /*
+                change the content of the text " ancho <= 500px"
+                */
+            #text{
+                font-size: 20px;
+                content: "ancho >= 700px";
+            }
+
+            #text::before{
+                content: "ancho >= 700px";
+                font-size: 100px;
+            }
+        }
+        
+    </style>
 </head>
 <body>
     <div id="container">
-
-        <samp id="
-
-        
-        </samp>
+<span id="text">
+sa
+</span>
     </div>
 </body>
 </html>
