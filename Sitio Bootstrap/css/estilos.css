@@ -7,10 +7,73 @@
             background-color: #ccc;
             height: 100%;
             width: 100%;
+            position: relative;
+            overflow: hidden;
+   
         }
+        header{
+                /*
+            espacios entre los elementos del contenedor y misma linea
+            
+            */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fc0202;
+            height: 100px;
+            width: 100%;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-top: 1px solid #ccc;
 
+        }
+        #titulo, #logo{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
         #logo{
             background-image: url("../img/logo.png");
             height: 100px;
             width: 100px;
+          
+        }
+
+        footer{
+            background-color: #fc0202;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            /* is in bootom */
+            position: absolute;
+            bottom: 0;
+
+            
+        }
+        @media screen and (max-width: 768px) {
+            footer{
+                position: relative;
+            }
+        
+            
         }
