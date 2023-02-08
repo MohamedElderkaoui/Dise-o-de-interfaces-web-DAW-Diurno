@@ -1,0 +1,16 @@
+   body{
+            background-color: #ccc;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            background-color: #ccc;
+            height: 100%;
+            width: 100%;
+        }
+
+        #logo{
+            background-image: url("../img/logo.png");
+            height: 100px;
+            width: 100px;
+        }
