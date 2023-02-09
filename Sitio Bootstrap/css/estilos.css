@@ -79,157 +79,83 @@
         }
         main{
             background-color: #fff;
-            height: 100%;
+            height: auto;
             width: 100%;
          
         }
-        main .imga{
-          
-            height: 100vh;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-        }
-        main{
-            position: relative;
-        }
-    #img1{
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/1.jpeg")        ;/*no se ve*/
- height: 100px;
+        
+    div#img1{
         width: 100px;
-       
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    #img2{
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/2.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+         background: url("../img/ff1.jpeg");
     }
-    #img3{
+
+    div#img2{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/3.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/2.jpeg");
     }
-    #img4{
+    div#img3{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/4.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/3.jpeg");
     }
-    #img5{
+
+    div#img4{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/5.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/4.jpeg");
     }
-    #img6{
+    div#img5{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/6.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/5.jpeg");
     }
-    #img7{
+    div#img6{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/7.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/6.jpeg");
     }
-    #img8{
+    div#img7{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/8.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/7.jpeg");
     }
-    #img9{
+    div#img8{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/9.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/8.jpeg");
     }
-    #img10{
+    div#img9{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/10.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/9.jpeg");
     }
-    #img11{
+    div#img10{
+        width: 100px;
         height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/11.jpeg")        ;/*no se ve*/
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url("../img/10.jpeg");
     }
-
+    div#img11{
+        width: 100px;
+        height: 100px;
+        background: url("../img/11.jpeg");
+    }
+@media (max-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+@media (min-width: 768px) {
+  .col-lg-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
