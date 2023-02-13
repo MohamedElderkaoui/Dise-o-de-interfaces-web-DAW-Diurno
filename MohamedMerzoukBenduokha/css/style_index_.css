@@ -1,4 +1,4 @@
-* {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -95,10 +95,16 @@ only screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      /* misma linea  los subelemento */
+      
     }
-    nav>.espacio_enter_elemento_y_misma_linea > * {
-      margin: 0 10%;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* ul no se solapan */
     }
+
     /*
       espacio_enter_elemento_y_misma_linea*/
     .espacio_enter_elemento_y_misma_linea {
@@ -107,10 +113,123 @@ only screen and (min-width: 768px) {
       align-items: center;
     }
     nav>.espacio_enter_elemento_y_misma_linea > * {
-      margin: 0 10%;
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+      
+    }
+    nav>ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav>ul>li{
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+/*
+div separar por 10px vectical
+*/
+    .separar_por_10px {
+      display: RELATIVE;
+      position: relative;
+
+    }
+    .separar_por_10px * {
+      POSITION: ABSOLUTE;
+      position: absolute;
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
+
+    }
+    .top_margen_10px_de_los_elemento_hijo {
+    display: RELATIVE;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    }
+     .top_margen_10px_de_los_elemento_hijo > * {
+      display: absolute;
+      position: absolute;
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .separar_por_10px {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .separar_por_10px * {
+      margin: 0 10px;
+    }
+    nav {background-color: #000;
+      color: #fff;
+      padding: 10px 0;  
+        }
+
+    /*
+    div separar por 10px
+*/
+    .derecha_flex_end {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
 
-    
+    .derecha_flex_end * {
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+    /*padding: 10px 0; */
+    ._10px_de_padding {
+      padding: 10px 0;
+    }
+    .caja_de_navbar_de_ancho_auto_y_alto_40 {
+      width: auto;
+      height: 30px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 }
     
 
