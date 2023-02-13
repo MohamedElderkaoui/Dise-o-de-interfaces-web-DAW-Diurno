@@ -39,6 +39,12 @@
             height: 100px;
             width: 100px;
           
+        }#logo2{
+            background-image: url("../img/logo2.jpeg");
+            height: 100px;
+            width: 100px;
+            /* so*/
+          
         }
 
         footer{
@@ -140,6 +146,61 @@
         width: 100px;
         height: 100px;
         background: url("../img/11.jpeg");
+    }
+    div#img_1{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p1.jpeg");
+    }
+    div#img_2{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p2.png");
+    }
+    div#img_3{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p3.jpg");
+    }
+    div#img_4{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p4.jpeg");
+    }
+    div#img_5{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p5.jpeg");
+    }
+    div#img_6{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p6.jpeg");
+    }
+    div#img_7{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p7.jpeg");
+    }
+    div#img_8{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p8.jpeg");
+    }
+    div#img_9{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p9.jpeg");
+    }
+    div#img_10{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p10.jpeg");
+    }
+    div#img_11{
+        width: 100px;
+        height: 100px;
+        background: url("../img/p11.jpeg");
     }
 @media (max-width: 576px) {
   .col-sm-6 {
