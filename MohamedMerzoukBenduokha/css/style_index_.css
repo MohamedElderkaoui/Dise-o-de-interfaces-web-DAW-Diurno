@@ -20,7 +20,78 @@ only screen and (min-width: 768px) {
   height: 100px;
   background: url("../img/logo.jpeg");
   background-size: cover;
+  opacity: 5; 
+  position: relative;
 }
+
+/*  
+< WHEN THE MOUSE MOVES OVER THE ELEMENT . SEE THE ALT OF THE DIV */
+
+ 
+#logo:hover {
+  background: url("../img/logo.jpeg");
+  background-size: cover;
+  opacity: 1;
+}
+
+#logo:active {
+  background: url("../img/logo.jpeg");
+  background-size: cover;
+  opacity: 1; 
+}
+
+#logo:visited {
+  background: url("../img/logo.jpeg");
+  background-size: cover;
+  opacity: 1;
+}
+
+#logo:link {
+  background: url("../img/logo.jpeg");
+  background-size: cover;
+  opacity: 1;
+}
+
+#logo:target {
+  background: url("../img/logo.jpeg");
+  background-size: cover;
+  opacity: 1;
+}
+
+/* ALT OF THE DIV */
+#logo:hover::before {
+  content: "logo";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+ opacity: 0.5;
+  align-items: center;
+
+}
+
+#logo:hover {
+  opacity: 0.5;
+  /*
+  solo para el logo 
+   */
+  background: url("../img/logo.jpeg");
+  background-size: cover;
+  opacity: 0.5;
+
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
 @media only screen and (min-width: 1024px) {
   /*
     body es 80% de pantalla y centra
@@ -230,6 +301,81 @@ div separar por 10px vectical
       margin-left: 10px;
       margin-right: 10px;
     }
+    /*  ul como menu despliegel  */
+    .ul_menu_desplegable {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .ul_menu_desplegable>li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ul_menu_desplegable>li>a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ul_menu_desplegable:hover {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ul_menu_desplegable:hover>li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ul_menu_desplegable:hover>li>a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ul_menu_desplegable:hover>li>a:hover {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ul_menu_desplegable:hover>li>a:hover>ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
 }
     
 
