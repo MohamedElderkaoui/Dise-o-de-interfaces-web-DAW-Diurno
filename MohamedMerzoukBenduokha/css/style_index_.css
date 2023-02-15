@@ -384,29 +384,101 @@ div separar por 10px vectical
 para movil
 */
 
-@media only screen and (max-width: 1024px) {
+@media  (max-width: 1024px) {
+  
   /*
-body se expande al 100% de la pantalla
-*/
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: green;
-  }
-  .pie_de_pag{
-        /* bottom: 0; */
-        position: absolute;
-        bottom: 0;
-    }
-    .largo_100 {
-      width: 100%;
-    }
+  HEADER
+  */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 0;
+    height: 100px;
+
+  } 
+  #T_1,#T_2{
+    /* 
+    para que el texto no se salga de la caja
+    */
+    overflow: hidden;
     /*
-      espacio_enter_elemento_y_misma_linea*/
-    .espacio_enter_elemento_y_misma_linea {
-      display: flex;
+    separar por 10px vectical
+    */
+    display: RELATIVE;
+    position: relative;
+    top: -10px;
+    
+  } 
+  #T_1{
+    /* 
+    para que el texto no se salga de la caja
+    */
+    overflow: hidden;
+    /*
+    separar por 10px vectical
+    */
+    display: RELATIVE;
+    position: relative;
+    top: -10px;
+    /*ESPACIADO HORIZONTAL ENTRE LOS ELEMENTOS*/
+    display: block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+              display: flex;
       justify-content: space-between;
       align-items: center;
-    }
+  }.ul_menu_desplegable {
+  position: absolute;
+  display: none;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.ul_menu_desplegable li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ul_menu_desplegable li:last-child {
+  border-bottom: none;
+}
+
+.ul_menu_desplegable a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.ul_menu_desplegable a:hover {
+  background-color: #f5f5f5;
+}
+
+  .pie_de_pag{
+    /***para que el pie de pagina se quede abajo */
+    position: absolute;
+    bottom: 0;
+
+  }
+  .pie_de_pag>div{
+    /***para que el pie de pagina se quede abajo */
+    position: absolute;
+    bottom: 0;
+    /* TEXTO CENTRADO */
+    text-align: center;
+    /* ESPACIADO HORIZONTAL ENTRE LOS ELEMENTOS */
+    display: block;
+    margin: 0 10px;
+
+  }
+  .largo_100{
+    width: 100%;
+  }
+
 }
