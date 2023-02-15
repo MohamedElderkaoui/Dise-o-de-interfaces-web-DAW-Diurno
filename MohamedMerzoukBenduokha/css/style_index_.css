@@ -385,100 +385,318 @@ para movil
 */
 
 @media  (max-width: 1024px) {
-  
+  /* pie de pagina */
+  .pie_de_pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   /*
-  HEADER
+  body tengo que ponerle un ancho de 100% para que se ajuste a la pantalla
   */
-  header {
-    background-color: #000;
-    color: #fff;
-    padding: 0px 0;
-    height: 100px;
-
-  } 
-  #T_1,#T_2{
-    /* 
-    para que el texto no se salga de la caja
-    */
-    overflow: hidden;
-    /*
-    separar por 10px vectical
-    */
-    display: RELATIVE;
-    position: relative;
-    top: -10px;
-    
-  } 
-  #T_1{
-    /* 
-    para que el texto no se salga de la caja
-    */
-    overflow: hidden;
-    /*
-    separar por 10px vectical
-    */
-    display: RELATIVE;
-    position: relative;
-    top: -10px;
-    /*ESPACIADO HORIZONTAL ENTRE LOS ELEMENTOS*/
-    display: block;
-    margin: 0 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-              display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }.ul_menu_desplegable {
-  position: absolute;
-  display: none;
-  z-index: 999;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-
-.ul_menu_desplegable li {
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-}
-
-.ul_menu_desplegable li:last-child {
-  border-bottom: none;
-}
-
-.ul_menu_desplegable a {
-  display: block;
-  padding: 5px 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.ul_menu_desplegable a:hover {
-  background-color: #f5f5f5;
-}
-
-  .pie_de_pag{
-    /***para que el pie de pagina se quede abajo */
-    position: absolute;
-    bottom: 0;
-
-  }
-  .pie_de_pag>div{
-    /***para que el pie de pagina se quede abajo */
-    position: absolute;
-    bottom: 0;
-    /* TEXTO CENTRADO */
-    text-align: center;
-    /* ESPACIADO HORIZONTAL ENTRE LOS ELEMENTOS */
-    display: block;
-    margin: 0 10px;
-
-  }
-  .largo_100{
+  body {
     width: 100%;
+    height: 100%;
+    background-color: green;
   }
+  /* 
+         
+         
+           <body class="ancho_100">
+    <div id="conten" class="blanco ancho_100">
+      <header class="blanco  ancho_100 div_separar_por_10px_vertical">
+        <div id="T_1" class="espacio_enter_elemento_y_misma_linea">
+          <div id="titule">
+            <h1>
+              <a href="index.html">mi portfolio</a>
+            </h1>
+          </div>
+          <div id="logo" alt="k"></div>
+        </div>
 
+        <div id="T_2" class="largo_100 _10px_de_padding ">
+          <nav clas="no_formato_lineal  espacio_enter_elemento_y_misma_linea ">
+            <!-- lisita (css,bootstrap,talwind) -->
+            <ul clas="lista_sin_formato">
+              <li class="lista_sin_formato no_formato_lineal">
+                <a href="index.html"  class="sin_formato blanco">
+                    inicio
+                </a>
+              </li>
+            </ul>
+
+            <!-- lisita (css,bootstrap,talwind) derecha-->
+            <ul clas="lista_sin_formato top_margen_10px_de_los_elemento_hijo espacio_enter_elemento_y_misma_linea">
+              <li id="css" class="blanco caja_de_navbar_de_ancho_auto_y_alto_40 ">
+                css
+                <!-- 
+                  ul como menu despliegel 
+                 -->
+                <ul class="ul_menu_desplegable ">
+                   <li>
+                    <a href="css/item1_css.html">mapa</a>
+                  </li>
+                   <li>
+                    <a href="css/item2_css.html">
+                      sprite
+                    </a>
+                  </li>
+                   <li>
+                    <a href="css/item3_css.html">
+                      hove
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="bootstrap" >
+                bootstrap
+                   <ul>
+                   <li>
+                    <a href="bootstrap/item1_bootstrap.html">
+
+                    </a>
+                  </li>
+                   <li>
+                    <a href="bootstrap/item2_boottrap.html">
+                    </a>
+                  </li>
+                   <li>
+                    <a href="bootstrap/item3_boottrap.html">
+
+                    </a>
+                  </li>
+                 </ul>
+              </li>
+              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="talwind" >
+                talwind
+                   <ul>
+                   <li>
+                      <a href="talwind/item1_talwind.html">
+
+                      </a>
+                    </li>
+                   <li>
+                    <a href="talwind/item2_talwind.html">
+
+                    </a>
+                  </li>
+                   <li>
+                    <a href="talwind/item3_talwind.html">
+
+                    </a>
+                  </li>
+                 </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main></main>
+      <footer class=" largo_100 pie_de_pag">
+        <div class="largo_100 espacio_enter_elemento_y_misma_linea">
+            
+            <div id="nombre">
+                mohamed el derkaoui merzouk bendoukhan
+            </div>
+            <div id="proyector">
+                trambajo de diseño de intefaza
+            </div>
+            <div id="anio">(c)2023</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+   */
+
+   body {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: relative;
+  
+}
+ /*
+  para movil
+ */
+ /*
+ #conten es el contenedor principal
+ */
+#conten {
+  
+ /* 80% de body */
+  width: 80%;
+  /* altura de la pantalla */
+
+  height: 100%;
+  background-color: red;
+  /* centrar el contenedor */
+  margin: auto;
+  /* contenido en el contenedor */  
+  position: relative;
+
+
+}
+#conten>* {
+   position: absolute;
+    width: 100%;
+     height: 100%;
+     justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+}
+#conten>header {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+}
+/*<nav clas="no_formato_lineal  espacio_enter_elemento_y_misma_linea ">
+            <!-- lisita (css,bootstrap,talwind) -->
+            <ul clas="lista_sin_formato">
+              <li class="lista_sin_formato no_formato_lineal">
+                <a href="index.html"  class="sin_formato blanco">
+                    inicio
+                </a>
+              </li>
+            </ul>
+
+            <!-- lisita (css,bootstrap,talwind) derecha-->
+            <ul clas="lista_sin_formato top_margen_10px_de_los_elemento_hijo espacio_enter_elemento_y_misma_linea">
+              <li id="css" class="blanco caja_de_navbar_de_ancho_auto_y_alto_40 ">
+                css
+                <!-- 
+                  ul como menu despliegel 
+                 -->
+                <ul class="ul_menu_desplegable ">
+                   <li>
+                    <a href="css/item1_css.html">mapa</a>
+                  </li>
+                   <li>
+                    <a href="css/item2_css.html">
+                      sprite
+                    </a>
+                  </li>
+                   <li>
+                    <a href="css/item3_css.html">
+                      hove
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="bootstrap" >
+                bootstrap
+                   <ul>
+                   <li>
+                    <a href="bootstrap/item1_bootstrap.html">
+
+                    </a>
+                  </li>
+                   <li>
+                    <a href="bootstrap/item2_boottrap.html">
+                    </a>
+                  </li>
+                   <li>
+                    <a href="bootstrap/item3_boottrap.html">
+
+                    </a>
+                  </li>
+                 </ul>
+              </li>
+              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="talwind" >
+                talwind
+                   <ul>
+                   <li>
+                      <a href="talwind/item1_talwind.html">
+
+                      </a>
+                    </li>
+                   <li>
+                    <a href="talwind/item2_talwind.html">
+
+                    </a>
+                  </li>
+                   <li>
+                    <a href="talwind/item3_talwind.html">
+
+                    </a>
+                  </li>
+                 </ul>
+              </li>
+            </ul>
+          </nav>*/
+          /* menu desplegable */
+ /* Set the background and text color for the dropdown menu /
+.ul_menu_desplegable {
+background-color: #000;
+color: #fff;
+display: none; / hide the dropdown menu by default *
+position: absolute;
+top: 40px;
+left: 0;
+width: 100%;
+}
+
+/* Set the style for the dropdown items */
+.ul_menu_desplegable li {
+padding: 10px;
+border-bottom: 1px solid #fff;
+}
+
+/* Change the background color of the dropdown item on hover */
+.ul_menu_desplegable li:hover {
+background-color: #fff;
+color: #000;
+}
+
+/* Set the style for the nested dropdown items */
+.ul_menu_desplegable li ul li {
+padding: 5px 10px;
+border-bottom: 1px solid #fff;
+}
+
+/* Change the background color of the nested dropdown item on hover */
+.ul_menu_desplegable li ul li:hover {
+background-color: #fff;
+color: #000;
+}
+
+/* Set the style for the dropdown arrow */
+.caja_de_navbar_de_ancho_auto_y_alto_40:after {
+content: "\25BE";
+font-size: 14px;
+color: #fff;
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY(-50%);
+transition: all 0.2s ease-in-out;
+}
+
+/* Change the color of the arrow on hover */
+.caja_de_navbar_de_ancho_auto_y_alto_40:hover:after {
+color: #000;
+}
+
+/* Show the dropdown menu on hover */
+.caja_de_navbar_de_ancho_auto_y_alto_40:hover .ul_menu_desplegable {
+display: block;
+transition: all 0.2s ease-in-out;
+}
+
+/* Hide the dropdown menu with a 2-second transition when not hovered */
+.caja_de_navbar_de_ancho_auto_y_alto_40:not(:hover) .ul_menu_desplegable {
+display: none;
+transition: all 2s ease-in-out;
+}
+li{
+  list-style: none;
+}
 }
