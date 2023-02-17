@@ -420,7 +420,7 @@ para movil
 
         <div id="T_2" class="largo_100 _10px_de_padding ">
           <nav clas="no_formato_lineal  espacio_enter_elemento_y_misma_linea ">
-            <!-- lisita (css,bootstrap,talwind) -->
+            <!-- lisita (css,bootstrap,Tailwind) -->
             <ul clas="lista_sin_formato">
               <li class="lista_sin_formato no_formato_lineal">
                 <a href="index.html"  class="sin_formato blanco">
@@ -429,7 +429,7 @@ para movil
               </li>
             </ul>
 
-            <!-- lisita (css,bootstrap,talwind) derecha-->
+            <!-- lisita (css,bootstrap,Tailwind) derecha-->
             <ul clas="lista_sin_formato top_margen_10px_de_los_elemento_hijo espacio_enter_elemento_y_misma_linea">
               <li id="css" class="blanco caja_de_navbar_de_ancho_auto_y_alto_40 ">
                 css
@@ -471,21 +471,21 @@ para movil
                   </li>
                  </ul>
               </li>
-              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="talwind" >
-                talwind
+              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="Tailwind" >
+                Tailwind
                    <ul>
                    <li>
-                      <a href="talwind/item1_talwind.html">
+                      <a href="Tailwind/item1_talwind.html">
 
                       </a>
                     </li>
                    <li>
-                    <a href="talwind/item2_talwind.html">
+                    <a href="Tailwind/item2_talwind.html">
 
                     </a>
                   </li>
                    <li>
-                    <a href="talwind/item3_talwind.html">
+                    <a href="Tailwind/item3_talwind.html">
 
                     </a>
                   </li>
@@ -559,7 +559,7 @@ para movil
   position: relative;
 }
 /*<nav clas="no_formato_lineal  espacio_enter_elemento_y_misma_linea ">
-            <!-- lisita (css,bootstrap,talwind) -->
+            <!-- lisita (css,bootstrap,Tailwind) -->
             <ul clas="lista_sin_formato">
               <li class="lista_sin_formato no_formato_lineal">
                 <a href="index.html"  class="sin_formato blanco">
@@ -568,7 +568,7 @@ para movil
               </li>
             </ul>
 
-            <!-- lisita (css,bootstrap,talwind) derecha-->
+            <!-- lisita (css,bootstrap,Tailwind) derecha-->
             <ul clas="lista_sin_formato top_margen_10px_de_los_elemento_hijo espacio_enter_elemento_y_misma_linea">
               <li id="css" class="blanco caja_de_navbar_de_ancho_auto_y_alto_40 ">
                 css
@@ -610,21 +610,21 @@ para movil
                   </li>
                  </ul>
               </li>
-              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="talwind" >
-                talwind
+              <li class="blanco caja_de_navbar_de_ancho_auto_y_alto_40" id="Tailwind" >
+                Tailwind
                    <ul>
                    <li>
-                      <a href="talwind/item1_talwind.html">
+                      <a href="Tailwind/item1_talwind.html">
 
                       </a>
                     </li>
                    <li>
-                    <a href="talwind/item2_talwind.html">
+                    <a href="Tailwind/item2_talwind.html">
 
                     </a>
                   </li>
                    <li>
-                    <a href="talwind/item3_talwind.html">
+                    <a href="Tailwind/item3_talwind.html">
 
                     </a>
                   </li>
