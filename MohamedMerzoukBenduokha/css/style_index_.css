@@ -375,13 +375,168 @@ div separar por 10px vectical
       margin-left: 10px;
       margin-right: 10px;
     }
+    /*
+  VERTICAL DROPDOWN MENU
     
+    */
+
+     #css,#bootstrap,#Tailwind {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+   
+   #css li,#bootstrap li,#Tailwind li {
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+        background: #000;
+        border-bottom: 1px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+    }
+
+    #css li ul,#bootstrap li ul,#Tailwind li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        /*direcio vertical*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+
+    #css li:hover ul,#bootstrap li:hover ul,#Tailwind li:hover ul {
+        display: block;
+
+    }
+
+
 }
     
 
 
 /*
 para movil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
 
 @media  (max-width: 1024px) {
