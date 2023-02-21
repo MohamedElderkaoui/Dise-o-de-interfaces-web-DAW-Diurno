@@ -691,6 +691,17 @@ footer ,footer>div {
   width: 100%;
   background-color: #ccc;
 }
+/* #contento con scroll*/
+#contento{
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 }
 /*
 para movil
@@ -1206,6 +1217,18 @@ footer{
   border-radius: ;
 
 }
+#contento{
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* de rojo a azul y de azul a verde*/
+  background: linear-gradient(90deg, red, blue, green);
+
+
 }
 
 
