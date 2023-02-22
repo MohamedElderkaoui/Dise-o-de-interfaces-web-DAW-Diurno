@@ -1208,16 +1208,8 @@ footer{
   position: relative;  
 }
 #contento {
-  /* 
-  centrar el contenido de main
-  */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: ;
 
-}
-#contento{
+
   overflow-y: scroll;
   height: 100%;
   width: 100%;
@@ -1226,11 +1218,94 @@ footer{
   align-items: center;
   flex-direction: column;
   /* de rojo a azul y de azul a verde*/
-  background: linear-gradient(90deg, red, blue, green);
+  background: linear-gradient(90deg, red, blue, green,red);
+
 
 
 }
 
+#conten{
+  display:  grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /*
+  header
+  main
+  footer
+  */
+  grid-template-areas: "header header header"
+                      "main main main"
+                      "footer footer footer";  
+}
+
+footer{
+  grid-area: footer;
+  z-index: 1;
+  background-color: #ccc;
+  align-items: end;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 1fr;
+  grid-template-areas:
+    "."
+    "div";
+}
+main{
+  display: flex;
+  position: relative
+}
+
+
+footer ,footer>div {
+  /* HOW TO PUT FOOTER IN THE FOOTER OF THE PAGE */
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+  /* fija footer en al final de pagina */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+
+/* #contento con scroll*/
+#contento{
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+#conten{
+  position: relative;
+  display: block;
+}
+footer{
+  /* esta pie de pagina */
+   position: absolute;
+  bottom: 100%;
+  
+}
+}
 
 
 
