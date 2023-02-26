@@ -754,6 +754,159 @@ para movil
 
 
 
+ a.t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+/* Path: MohamedMerzoukBenduokha\css\style_HOVER.css */
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+@keyframes rotate2d {
+  from {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+
+/* cambio  color*/
+ .t:hover{
+  display: inline-block;
+  animation: rotate2d 2s linear infinite;
+  transform-style: preserve-3d;
+  transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+  backface-visibility: hidden;
+}
+
 
 
 
