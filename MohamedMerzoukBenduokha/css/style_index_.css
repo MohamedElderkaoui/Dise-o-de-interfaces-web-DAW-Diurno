@@ -1454,14 +1454,13 @@ th, td {
 }
 footer{
   /* esta pie de pagina */
-   position: absolute;
+  position: absolute;
   bottom: 100%;
-  
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
 }
 }
-
-
-
 
 
 
