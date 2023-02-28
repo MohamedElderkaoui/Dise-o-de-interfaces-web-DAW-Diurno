@@ -37,7 +37,7 @@
 
 
    /* Estilos para dispositivos móviles */
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     .form-label {
       font-size: 1rem;
     }
@@ -49,5 +49,5 @@
     .form-btn {
       font-size: 1rem;
     }
-    
+
   }
