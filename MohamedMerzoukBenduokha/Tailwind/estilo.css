@@ -1,0 +1,53 @@
+  .form-label {
+    font-size: 1.25rem;
+    color: #4A5568;
+  }
+
+  .form-input {
+    border-color: #CBD5E0;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #4A5568;
+    background-color: #EDF2F7;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #63B3ED;
+    box-shadow: 0 0 0 0.125em rgba(99, 179, 237, 0.25);
+  }
+
+  .form-btn {
+    background-color: #4299E1;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-btn:hover {
+    background-color: #3182CE;
+  }
+
+
+
+
+   /* Estilos para dispositivos móviles */
+  @media (max-width: 767px) {
+    .form-label {
+      font-size: 1rem;
+    }
+
+    .form-input {
+      font-size: 0.875rem;
+    }
+
+    .form-btn {
+      font-size: 1rem;
+    }
+    
+  }
