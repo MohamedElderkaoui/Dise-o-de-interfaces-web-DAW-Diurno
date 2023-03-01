@@ -321,34 +321,6 @@ div separar por 10px vectical
       align-items: center;
      
     }
-    .ul_menu_desplegable:hover {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .ul_menu_desplegable:hover>li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    
-    }
-    .ul_menu_desplegable:hover>li>a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-    .ul_menu_desplegable:hover>li>a:hover {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-    .ul_menu_desplegable:hover>li>a:hover>ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
     /*
   VERTICAL DROPDOWN MENU
     
@@ -369,16 +341,9 @@ li:hover  ul {
   display: block; /* Muestra la lista al hacer hover */
 }
 
-/* Para el submenú */
-ul.ul_menu_desplegable li {
-  display: table;
-  float: none;
-}
 
 /* Para los enlaces dentro del submenú */
-ul.ul_menu_desplegable a {
-  display: block;
-}
+
 /* #pag ul li ul li  esta vertica */
 #pag ul li ul li {
   display: block;
@@ -436,47 +401,14 @@ nav ul ul ul {
   left: 100%;
   top: 0;
 }
-/*
-  VERTICAL DROPDOWN MENU
-    */
-    /* Para todas las listas del menú */
-ul.ul_menu_desplegable {
-  display: none; /* Oculta todas las listas */
-  position: absolute;
-  z-index: 1;
-}
 
 /* Para cada elemento de la lista del menú */
 li:hover > ul {
   display: block; /* Muestra la lista al hacer hover */
 
 }
-li:hover  ul {
-  display: block; /* Muestra la lista al hacer hover */
-}
 
-/* Para el submenú */
-ul.ul_menu_desplegable li {
-  display: table;
-  float: none;
-}
 
-/* Para los enlaces dentro del submenú */
-ul.ul_menu_desplegable a {
-  display: block;
-}
-/* #pag ul li ul li  esta vertica */
-#pag ul li ul li {
-  display: block;
-  float: none;
-  width: 100%;
-  text-align: left;
-  background-color: #fff;
-  color: #000;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-}
 nav {
   background-color: #ccc;
   padding: 10px;
@@ -674,7 +606,6 @@ main{
   margin-left: 10px;
   margin-right: 10px;
 }
-
 footer{
   grid-area: footer;
   z-index: 1;
@@ -711,42 +642,6 @@ footer ,footer>div {
   align-items: center;
   flex-direction: column;
 }
-
-/* Style the dropdown menu */
-ul.menu {
-  list-style: none;
-  position: relative;
-  display: inline-block;
-}
-
-/* Style the links in the dropdown menu */
-ul.menu li a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  padding: 10px;
-}
-
-/* Style the dropdown menu when it's open */
-ul.menu ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-  display: none;
-}
-
-/* Style the items in the dropdown menu when it's open */
-ul.menu ul li {
-  display: block;
-}
-
-/* Show the dropdown menu when the user hovers over it */
-ul.menu li:hover > ul {
-  display: block;
-}
-
 
 }
 /*

@@ -11,10 +11,9 @@
         <!-- 
     add css
 -->
-        <link rel="stylesheet" href=".\Tailwind\output.css">
+        <link rel="stylesheet" href="./Tailwind/output.css">
         <link rel="stylesheet" href="css/style_index_.css" />
-        <link rel="stylesheet" href=".\Tailwind\estilo.css" />
-        <link rel="stylesheet" href=".\Tailwind\estilo2.css" />
+  
     </head>
     <body class="ancho_100">
         <div id="conten" class="blanco ancho_100">
@@ -121,39 +120,31 @@
             </header>
             <main>
                  <div id="contento">
-<div class="carousel relative overflow-hidden">
-  <div class="carousel-inner relative w-full">
+<div class="carousel relative">
+  <div class="carousel-inner relative overflow-hidden w-full">
     <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
     <div class="carousel-item absolute opacity-0" style="height:50vh;">
-      <img src="https://via.placeholder.com/1200x500" alt="Carousel Image 1">
+      <img class="w-full" src="img/logo.jpeg" alt="Slide 1">
     </div>
     <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
     <div class="carousel-item absolute opacity-0" style="height:50vh;">
-      <img src="https://via.placeholder.com/1200x500" alt="Carousel Image 2">
+      <img class="w-full" src="img/MAPA.jpg" alt="Slide 2">
     </div>
     <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
     <div class="carousel-item absolute opacity-0" style="height:50vh;">
-      <img src="https://via.placeholder.com/1200x500" alt="Carousel Image 3">
+      <img class="w-full" src="img/play/playa (1).jpg" alt="Slide 3">
     </div>
-    <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-4 absolute cursor-pointer hidden text-2xl font-bold leading-tight text-gray-100 hover:text-gray-300 rounded-full bg-gray-800 hover:bg-gray-700">
-      &#x2039;
-    </label>
-    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-4 absolute cursor-pointer hidden text-2xl font-bold leading-tight text-gray-100 hover:text-gray-300 rounded-full bg-gray-800 hover:bg-gray-700">
-      &#x203a;
-    </label>
-    <label for="carousel-1" class="control-1 absolute bottom-0 left-0 w-full h-10 cursor-pointer text-center text-gray-100 hover:text-gray-300">
-      Image 1
-    </label>
-    <label for="carousel-2" class="control-1 absolute bottom-0 left-0 w-full h-10 cursor-pointer text-center text-gray-100 hover:text-gray-300">
-      Image 2
-    </label>
-    <label for="carousel-3" class="control-1 absolute bottom-0 left-0 w-full h-10 cursor-pointer text-center text-gray-100 hover:text-gray-300">
-      Image 3
-    </label>
+    <label for="carousel-1" class="prev absolute z-10 inset-y-0 left-0 w-10 h-full text-3xl text-white font-bold hover:text-gray-300 cursor-pointer hidden md:block">&#x2039;</label>
+    <label for="carousel-3" class="next absolute z-10 inset-y-0 right-0 w-10 h-full text-3xl text-white font-bold hover:text-gray-300 cursor-pointer hidden md:block">&#x203a;</label>
+    <div class="carousel-indicators">
+      <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-300">•</label>
+      <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-300">•</label>
+      <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-300">•</label>
+    </div>
   </div>
 </div>
 
-   
+
                 </div>
             </main>
             <footer class=" largo_100 pie_de_pag">
