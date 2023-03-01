@@ -665,6 +665,16 @@ main{
   grid-area: main;
   background-color: #cc3;
 }
+.nav_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 footer{
   grid-area: footer;
   z-index: 1;
@@ -701,6 +711,42 @@ footer ,footer>div {
   align-items: center;
   flex-direction: column;
 }
+
+/* Style the dropdown menu */
+ul.menu {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the links in the dropdown menu */
+ul.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+/* Style the dropdown menu when it's open */
+ul.menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  display: none;
+}
+
+/* Style the items in the dropdown menu when it's open */
+ul.menu ul li {
+  display: block;
+}
+
+/* Show the dropdown menu when the user hovers over it */
+ul.menu li:hover > ul {
+  display: block;
+}
+
 
 }
 /*
@@ -1458,6 +1504,7 @@ footer{
   bottom: 100%;
   width: 100%;
   height: auto;
+  bottom: 100%;
   background-color: #ccc;
 }
 }

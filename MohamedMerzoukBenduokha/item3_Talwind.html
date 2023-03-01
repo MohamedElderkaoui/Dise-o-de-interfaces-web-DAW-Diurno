@@ -14,6 +14,7 @@
         <link rel="stylesheet" href=".\Tailwind\output.css">
         <link rel="stylesheet" href="css/style_index_.css" />
         <link rel="stylesheet" href=".\Tailwind\estilo.css" />
+        <link rel="stylesheet" href=".\Tailwind\estilo2.css" />
     </head>
     <body class="ancho_100">
         <div id="conten" class="blanco ancho_100">
@@ -119,41 +120,41 @@
                 </div>
             </header>
             <main>
-                 <div id="contento"><div class="container mx-auto px-4">
-  <form class="max-w-md mx-auto">
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="name">
-        Nombre Completo
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Ingrese su nombre completo">
+                 <div id="contento">
+<div class="carousel relative overflow-hidden">
+  <div class="carousel-inner relative w-full">
+    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+    <div class="carousel-item absolute opacity-0" style="height:50vh;">
+      <img src="https://via.placeholder.com/1200x500" alt="Carousel Image 1">
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="email">
-        Correo Electrónico
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Ingrese su correo electrónico">
+    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+    <div class="carousel-item absolute opacity-0" style="height:50vh;">
+      <img src="https://via.placeholder.com/1200x500" alt="Carousel Image 2">
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="password">
-        Contraseña
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Ingrese su contraseña">
+    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+    <div class="carousel-item absolute opacity-0" style="height:50vh;">
+      <img src="https://via.placeholder.com/1200x500" alt="Carousel Image 3">
     </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="confirm-password">
-        Confirmar Contraseña
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="confirm-password" type="password" placeholder="Confirme su contraseña">
-    </div>
-    <div class="mb-4">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-        Registrarse
-      </button>
-    </div>
-  </form>
+    <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-4 absolute cursor-pointer hidden text-2xl font-bold leading-tight text-gray-100 hover:text-gray-300 rounded-full bg-gray-800 hover:bg-gray-700">
+      &#x2039;
+    </label>
+    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-4 absolute cursor-pointer hidden text-2xl font-bold leading-tight text-gray-100 hover:text-gray-300 rounded-full bg-gray-800 hover:bg-gray-700">
+      &#x203a;
+    </label>
+    <label for="carousel-1" class="control-1 absolute bottom-0 left-0 w-full h-10 cursor-pointer text-center text-gray-100 hover:text-gray-300">
+      Image 1
+    </label>
+    <label for="carousel-2" class="control-1 absolute bottom-0 left-0 w-full h-10 cursor-pointer text-center text-gray-100 hover:text-gray-300">
+      Image 2
+    </label>
+    <label for="carousel-3" class="control-1 absolute bottom-0 left-0 w-full h-10 cursor-pointer text-center text-gray-100 hover:text-gray-300">
+      Image 3
+    </label>
+  </div>
 </div>
 
-              </div>
+   
+                </div>
             </main>
             <footer class=" largo_100 pie_de_pag">
                 <div class="largo_100 espacio_enter_elemento_y_misma_linea">
