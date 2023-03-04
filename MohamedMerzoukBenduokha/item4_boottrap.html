@@ -11,12 +11,22 @@
         <!-- 
     add css
 -->
-        <link rel="stylesheet" href="./Tailwind/output.css">
+<script src="bootstrap5\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="bootstrap5\node_modules\bootstrap\dist\css\bootstrap.min.css">
         <link rel="stylesheet" href="css/style_index_.css" />
-  
+
+        <!-- add bootstrap
+        -->
+
+
+    
     </head>
-    <body class="ancho_100">
-      <div class="AS"></div>
+    <!-- 
+      fondo rojo 
+     -->
+    <body class="ancho_100"
+    class="bg-danger p-3"    >
+    <div class="AS"></div>
         <div id="conten" class="blanco ancho_100">
             <header class="blanco  div_separar_por_10px_vertical">
                 <div id="T_1" class="espacio_enter_elemento_y_misma_linea">
@@ -25,11 +35,11 @@
                             <a href="index.html">mi portfolio</a>
                         </h1>
                     </div>
-                    <div id="logo" alt="k"  class="t"></div>
+                    <div id="logo" alt="k"   class="t"></div>
                 </div>
 
                 <div id="T_2" class="largo_100 _10px_de_padding ">
-                    <nav clas="no_formato_l<ineal
+                      <nav clas="no_formato_lineal
                         espacio_enter_elemento_y_misma_linea ">
                         <!-- lisita (css,bootstrap,Tailwind) -->
                         <ul clas="lista_sin_formato">
@@ -51,7 +61,8 @@
                 ul como menu despliegel 
                 -->
                                 <ul class="ul_menu_desplegable
-                                    texto_arriba_de_ul">
+                                   pestaña
+                                texto_arriba_de_ul">
                                     <a href="item1_css.html">
                                     <li>
                                           mapa
@@ -89,8 +100,7 @@
                                         <li>
                                       Galería de imágenes
                                     </li>
-                                  </a>  
-                                  <a href="item4_boottrap.html">
+                                  </a>  <a href="item4_boottrap.html">
                                         <li>
                                       nav_bar
                                     </li>
@@ -104,7 +114,7 @@
                                 <ul class="ul_menu_desplegable">
                                   <a href="item1_Talwind.html">
                                     <li>
-                                            ejemplo de Tablas en bootstrap
+                                            ejemplo de Tablas 
                                           </li>
                                         </a>
                                         <a href="item2_Talwind.html">
@@ -125,34 +135,52 @@
                 </div>
             </header>
             <main>
-                 <div id="contento">
-<div class="carousel relative">
-  <div class="carousel-inner relative overflow-hidden w-full">
-    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-    <div class="carousel-item absolute opacity-0" style="height:50vh;">
-      <img class="w-full" src="img/logo.jpeg" alt="Slide 1">
-    </div>
-    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-    <div class="carousel-item absolute opacity-0" style="height:50vh;">
-      <img class="w-full" src="img/MAPA.jpg" alt="Slide 2">
-    </div>
-    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-    <div class="carousel-item absolute opacity-0" style="height:50vh;">
-      <img class="w-full" src="img/play/playa (1).jpg" alt="Slide 3">
-    </div>
-    <label for="carousel-1" class="prev absolute z-10 inset-y-0 left-0 w-10 h-full text-3xl text-white font-bold hover:text-gray-300 cursor-pointer hidden md:block">&#x2039;</label>
-    <label for="carousel-3" class="next absolute z-10 inset-y-0 right-0 w-10 h-full text-3xl text-white font-bold hover:text-gray-300 cursor-pointer hidden md:block">&#x203a;</label>
-    <div class="carousel-indicators">
-      <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-300">•</label>
-      <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-300">•</label>
-      <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-300">•</label>
-    </div>
+                    <div id="contento">
+<!--  --> 
+<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="index.html">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="cssDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CSS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="cssDropdown">
+          <a class="dropdown-item" href="item1_css.html">Mapa</a>
+          <a class="dropdown-item" href="item2_css.html">Sprite</a>
+          <a class="dropdown-item" href="item3_css.html">Hove</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="bootstrapDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bootstrap
+        </a>
+        <div class="dropdown-menu" aria-labelledby="bootstrapDropdown">
+          <a class="dropdown-item" href="item1_boottrap.html">Ejemplo de Tablas en Bootstrap</a>
+          <a class="dropdown-item" href="item2_boottrap.html">Formulario</a>
+          <a class="dropdown-item" href="item3_boottrap.html">Galería de imágenes</a>
+          <a class="dropdown-item" href="item4_boottrap.html">Nav Bar</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="tailwindDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tailwind
+        </a>
+        <div class="dropdown-menu" aria-labelledby="tailwindDropdown">
+          <a class="dropdown-item" href="item1_Talwind.html">Ejemplo de Tablas</a>
+          <a class="dropdown-item" href="item2_Talwind.html">Formulario</a>
+          <a class="dropdown-item" href="item3_Talwind.html">Galería de imágenes</a>
+        </div>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
 
-
-                </div>
-            </main>
+             </main>
             <footer class=" largo_100 pie_de_pag">
                 <div class="largo_100 espacio_enter_elemento_y_misma_linea">
                     <div id="nombre">

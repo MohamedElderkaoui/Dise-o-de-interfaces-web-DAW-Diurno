@@ -101,6 +101,24 @@ only screen and (min-width: 768px) {
     margin: 0 auto;
     background-color: red;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: 100% ;
+    grid-template-areas:
+      "AS conten AA"
+      "AS conten AA"
+      "AS conten AA";
+  }
+  .AS {
+    grid-area: AS;
+    background-color: rgb(255, 0, 0);
+  }
+  .conten {
+    grid-area: conten;
+  }
+  .AA {
+    grid-area: AA;
+    background-color: rgb(255, 0, 0);
   }
   .amarillo {
     background-color: yellow;
@@ -672,10 +690,6 @@ li {
 
 a {
   color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 10px 10px;
-  margin: auto;
 }
 
 a:hover {
@@ -1417,28 +1431,17 @@ footer{
   grid-template-columns: 1fr;
   grid-template-rows: 80% 1fr;
   grid-template-areas:
-    "."
-    "div";
+  
+    "div"  ".";
+
+
+     
 }
 main{
   display: flex;
   position: relative
 }
 
-
-footer ,footer>div {
-  /* HOW TO PUT FOOTER IN THE FOOTER OF THE PAGE */
-
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #ccc;
-  /* fija footer en al final de pagina */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #ccc;
-}
 
 /* #contento con scroll*/
 #contento{
@@ -1462,22 +1465,6 @@ table {
   width: 100%;
 }
 
-th, td {
-  padding: 15px;
-}
-#conten{
-  position: relative;
-  display: block;
-}
-footer{
-  /* esta pie de pagina */
-  position: absolute;
-  bottom: 100%;
-  width: 100%;
-  height: auto;
-  bottom: 100%;
-  background-color: #ccc;
-}
 }
 
 
@@ -1528,5 +1515,12 @@ nav>ul>a>li{
 }
 
 
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-
+/* CSS for hover effect on dropdown menu parent item */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
