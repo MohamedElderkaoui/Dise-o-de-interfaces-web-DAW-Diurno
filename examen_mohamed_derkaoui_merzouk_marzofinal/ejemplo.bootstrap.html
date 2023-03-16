@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap.bundle.min.js"></script>
+<style>
+ #main .col-sm-12 , .bg-green-900{
+background-color: #095000;
+  }
+  .footer{
+    background-color: yellow;
+  
+  }
+  *{
+     margin: auto;
+    padding: 2px;
+  
+  }
+  #main>.bg-col-lg, #main>.col-md{
+    background-color: red;
+  }
+.HE>.col-xs{
+  
+  background-color: darkgoldenrod;
+}
+.HE>.col-sm{
+  background-color: aqua;
+}
+.HE .col-lg{
+  background-color: #095000;
+}
+.text-xs-center{
+  align-self: center;
+} 
+div div div {border: 1px solid black;}
+</style>
+</head>
+<body>
+
+<div class="container">
+ <div class="row HE">
+  <div class="bg-green-900 col-lg col-md col-sm col-xs text-xs-center   border">header</div>
+ </div>
+  <div id="main" class="row">
+  <div class="bg-col-lg col-md col-sm-6 col-xs text-center  text-sx-start border-primary">1</div>
+  <div class="bg-col-lg col-md col-sm-6 col-xs text-center  border-primary">2</div>
+  <div class="bg-col-lg col-md col-sm-12 col-xs text-center text-sx-end first-letter:border-primary">3</div>
+ </div> <div class="row">
+  <div class="footer bg-col-lg-6 col-md-6 col-sm col-xs  text-lg-end text-md-end text-sm-center text-xs-center border-primary">footer</div>
+  <div class="footer bg-col-lg-6 col-md-6 col-sm col-xs  text-lg-start text-md-start text-sm-center text-xs-center border-primary">footer</div>
+ </div>
+</div>
+
+</body>
+</html>
